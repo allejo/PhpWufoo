@@ -1,0 +1,27 @@
+{
+  "name": "allejo/php-wufoo",
+  "description": "A wrapper for working with the Wufoo API",
+  "type": "library",
+  "require": {
+    "php": ">=5.4"
+  },
+  "require-dev": {
+    "guzzlehttp/guzzle": "^6.2",
+    "php-vcr/php-vcr": "^1.3",
+    "phpunit/phpunit": "^5.7",
+    "sami/sami": "^3.3",
+    "twig/twig": "~1.20"
+  },
+  "autoload": {
+    "psr-4": {
+      "allejo\\Wufoo\\": "src/"
+    }
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Vladimir Jimenez",
+      "email": "me@allejo.io"
+    }
+  ]
+}
