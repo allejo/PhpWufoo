@@ -105,4 +105,11 @@ class EntryQuery
             $query[$key] = $checkNull;
         }
     }
+
+    public static function create()
+    {
+        $query = new self();
+
+        return $query;
+    }
 }
