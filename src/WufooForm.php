@@ -2,6 +2,8 @@
 
 namespace allejo\Wufoo;
 
+use allejo\Wufoo\Exceptions\SubmissionException;
+
 /**
  * @api
  * @since 0.1.0
@@ -58,6 +60,10 @@ class WufooForm extends ApiObject
     /**
      * Get the number of entries this Wufoo form has.
      *
+     * @api
+     *
+     * @since 0.1.0
+     *
      * @return int
      */
     public function getEntriesCount()
@@ -67,5 +73,37 @@ class WufooForm extends ApiObject
         $json = json_decode($result, true);
 
         return $json['EntryCount'];
+    }
+
+    /**
+     * Submit an entry to this Wufoo form.
+     *
+     * @api
+     *
+     * @param  array $formData An array containing the data that will be POST'd to the Wufoo form. The keys used in the
+     *                         the array should be the unique IDs (e.g. Field1, Field12).
+     *
+     * @since  0.1.0
+     *
+     * @throws SubmissionException Wufoo returned an error on the entry submission.
+     *
+     * @return mixed
+     */
+    public function submitEntry(array $formData)
+    {
+        $url = $this->buildUrl('https://{subdomain}.wufoo.com/api/v3/forms/{identifier}/entries.json');
+        $result = self::$client
+            ->post($url, [
+                'form_params' => $formData
+            ])
+            ->getBody();
+        $json = json_decode($result, true);
+
+        if ($json['Success'] == 0)
+        {
+            throw new SubmissionException($json);
+        }
+
+        return $json['EntryId'];
     }
 }
