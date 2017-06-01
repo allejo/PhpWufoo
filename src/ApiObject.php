@@ -10,6 +10,9 @@ use GuzzleHttp\Client;
 abstract class ApiObject
 {
     /** @var string */
+    protected $id;
+
+    /** @var string */
     protected static $apiKey;
 
     /** @var string */
@@ -17,6 +20,14 @@ abstract class ApiObject
 
     /** @var Client */
     protected static $client;
+
+    protected function buildUrl($url)
+    {
+        return self::interpolate($url, [
+            'subdomain' => self::$subdomain,
+            'identifier' => $this->id,
+        ]);
+    }
 
     /**
      * @param string $subdomain The subdomain for your Wufoo account

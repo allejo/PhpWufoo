@@ -8,9 +8,6 @@ namespace allejo\Wufoo;
  */
 class WufooForm extends ApiObject
 {
-    /** @var string */
-    private $id;
-
     /**
      * Create an object for interacting with a Wufoo form.
      *
@@ -46,11 +43,7 @@ class WufooForm extends ApiObject
      */
     public function getEntries(EntryQuery $query = null)
     {
-        $url = self::interpolate('https://{subdomain}.wufoo.com/api/v3/forms/{identifier}/entries.json', [
-            'subdomain' => self::$subdomain,
-            'identifier' => $this->id,
-        ]);
-
+        $url = $this->buildUrl('https://{subdomain}.wufoo.com/api/v3/forms/{identifier}/entries.json');
         $request = self::$client->get($url, [
             'query' => (string)$query
         ]);
