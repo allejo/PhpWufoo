@@ -44,13 +44,15 @@ class WufooForm extends ApiObject
     public function getEntries(EntryQuery $query = null)
     {
         $url = $this->buildUrl('https://{subdomain}.wufoo.com/api/v3/forms/{identifier}/entries.json');
-        $request = self::$client->get($url, [
-            'query' => (string)$query
-        ]);
+        $result = self::$client
+            ->get($url, [
+                'query' => (string)$query
+            ])
+            ->getBody();
 
-        $result = json_decode($request->getBody(), true);
+        $json = json_decode($result, true);
 
-        return $result['Entries'];
+        return $json['Entries'];
     }
 
     /**
@@ -61,9 +63,9 @@ class WufooForm extends ApiObject
     public function getEntriesCount()
     {
         $url = $this->buildUrl('https://{subdomain}.wufoo.com/api/v3/forms/{identifier}/entries/count.json');
-        $request = self::$client->get($url);
-        $result = json_decode($request->getBody(), true);
+        $result = self::$client->get($url)->getBody();
+        $json = json_decode($result, true);
 
-        return $result['EntryCount'];
+        return $json['EntryCount'];
     }
 }
