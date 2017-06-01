@@ -1,5 +1,7 @@
 <?php
 
+use allejo\Wufoo\WufooForm;
+
 if (!file_exists(__DIR__ . "/../vendor/autoload.php"))
 {
     die(
@@ -11,3 +13,5 @@ if (!file_exists(__DIR__ . "/../vendor/autoload.php"))
 }
 
 require_once __DIR__ . '/../vendor/autoload.php';
+
+WufooForm::configureApi('fishbowl', 'AOI6-LFKL-VM1Q-IEX9');
