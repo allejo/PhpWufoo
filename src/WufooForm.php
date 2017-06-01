@@ -52,4 +52,18 @@ class WufooForm extends ApiObject
 
         return $result['Entries'];
     }
+
+    /**
+     * Get the number of entries this Wufoo form has.
+     *
+     * @return int
+     */
+    public function getEntriesCount()
+    {
+        $url = $this->buildUrl('https://{subdomain}.wufoo.com/api/v3/forms/{identifier}/entries/count.json');
+        $request = self::$client->get($url);
+        $result = json_decode($request->getBody(), true);
+
+        return $result['EntryCount'];
+    }
 }

@@ -43,4 +43,12 @@ class WufooFormTest extends \PHPUnit_Framework_TestCase
 
         $this->assertGreaterThan($entries[9]['EntryId'], $entries[0]['EntryId']);
     }
+
+    public function testWufooGetEntriesCount()
+    {
+        $form = new WufooForm(self::FORM_EXAMPLE);
+        $count = $form->getEntriesCount();
+
+        $this->assertGreaterThan(0, $count);
+    }
 }
