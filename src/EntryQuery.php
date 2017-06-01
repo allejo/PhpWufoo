@@ -21,10 +21,7 @@ class EntryQuery
     {
         $query = [];
 
-        if ($this->sortField)
-        {
-            $query['sort'] = $this->sortField;
-        }
+        $this->setIfNotNull($query, 'sort', $this->sortField);
 
         // 'ASC' is the default sorting option, so only set descending order if needed
         if (!$this->ascending)
@@ -32,11 +29,8 @@ class EntryQuery
             $query['sortDirection'] = 'DESC';
         }
 
-        if ($this->pageStart)
-        {
-            $query['pageStart'] = $this->pageStart;
-            $query['pageSize'] = $this->pageSize;
-        }
+        $this->setIfNotNull($query, 'pageStart', $this->pageStart);
+        $this->setIfNotNull($query, 'pageSize', $this->pageSize);
 
         $filterCounter = 1;
 
@@ -74,10 +68,24 @@ class EntryQuery
         return $this;
     }
 
-    public function paginate($start, $size)
+    public function offset($offset)
     {
-        $this->pageStart = $start;
-        $this->pageSize = $size;
+        $this->pageStart = $offset;
+
+        return $this;
+    }
+
+    public function limit($limit)
+    {
+        $this->pageSize = $limit;
+
+        return $this;
+    }
+
+    public function paginate($offset, $limit)
+    {
+        $this->pageStart = $offset;
+        $this->pageSize = $limit;
 
         return $this;
     }
@@ -88,5 +96,13 @@ class EntryQuery
         $this->sortField = $field;
 
         return $this;
+    }
+
+    private function setIfNotNull(array &$query, $key, &$checkNull)
+    {
+        if ($checkNull != null)
+        {
+            $query[$key] = $checkNull;
+        }
     }
 }
