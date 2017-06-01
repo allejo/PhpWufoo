@@ -84,7 +84,7 @@ class EntryQuery
 
     public function sortBy($field, $ascending = true)
     {
-        $this->ascending = ($ascending) ? 'ASC' : 'DESC';
+        $this->ascending = $ascending;
         $this->sortField = $field;
 
         return $this;
