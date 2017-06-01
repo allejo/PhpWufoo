@@ -1,5 +1,7 @@
 {
   "name": "allejo/php-wufoo",
+  "keywords": ["wufoo", "api"],
+  "homepage": "https://github.com/allejo/PhpWufoo",
   "description": "A wrapper for working with the Wufoo API",
   "type": "library",
   "require": {
@@ -21,7 +23,19 @@
   "authors": [
     {
       "name": "Vladimir Jimenez",
-      "email": "me@allejo.io"
+      "email": "me@allejo.io",
+      "homepage": "https://allejo.io",
+      "role": "Project Maintainer"
     }
-  ]
+  ],
+  "support": {
+    "issues": "https://github.com/allejo/PhpWufoo/issues",
+    "irc": "irc://irc.freenode.net/sujevo",
+    "source": "https://github.com/allejo/PhpWufoo"
+  },
+  "scripts": {
+    "test": [
+      "./vendor/bin/phpunit"
+    ]
+  }
 }
