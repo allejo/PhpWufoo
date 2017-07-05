@@ -21,7 +21,7 @@ namespace allejo\Wufoo;
  * @method static notEqualTo(mixed $v)
  * @method static notNull()
  */
-class EntryFilter
+class EntryFilter extends ApiObject
 {
     private static $filterMapping = [
         'contains' => 'Contains',

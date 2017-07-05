@@ -8,7 +8,7 @@ namespace allejo\Wufoo;
  * @api
  * @since 0.1.0
  */
-class EntryQuery
+class EntryQuery extends ApiObject
 {
     private $filters;
     private $booleanAnd;
@@ -33,7 +33,7 @@ class EntryQuery
     {
         $query = [];
 
-        $this->setIfNotNull($query, 'sort', $this->sortField);
+        self::setIfNotNull($query, 'sort', $this->sortField);
 
         // 'ASC' is the default sorting option, so only set descending order if needed
         if (!$this->ascending)
@@ -41,8 +41,8 @@ class EntryQuery
             $query['sortDirection'] = 'DESC';
         }
 
-        $this->setIfNotNull($query, 'pageStart', $this->pageStart);
-        $this->setIfNotNull($query, 'pageSize', $this->pageSize);
+        self::setIfNotNull($query, 'pageStart', $this->pageStart);
+        self::setIfNotNull($query, 'pageSize', $this->pageSize);
 
         $filterCounter = 1;
 
@@ -58,10 +58,10 @@ class EntryQuery
             $query['match'] = 'OR';
         }
 
-        $this->setIfNotNull($query, 'system', $this->system);
+        self::setIfNotNull($query, 'system', $this->system);
 
         // http_build_query() encodes special characters
-        return urldecode(http_build_query($query));
+        return self::buildQuery($query);
     }
 
     /**
@@ -218,14 +218,6 @@ class EntryQuery
         }
 
         return $this;
-    }
-
-    private function setIfNotNull(array &$query, $key, &$checkNull)
-    {
-        if ($checkNull != null)
-        {
-            $query[$key] = $checkNull;
-        }
     }
 
     /**
