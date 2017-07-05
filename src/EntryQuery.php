@@ -16,6 +16,7 @@ class EntryQuery
     private $sortField;
     private $pageStart;
     private $pageSize;
+    private $system;
 
     /**
      * @api
@@ -56,6 +57,8 @@ class EntryQuery
         {
             $query['match'] = 'OR';
         }
+
+        $this->setIfNotNull($query, 'system', $this->system);
 
         // http_build_query() encodes special characters
         return urldecode(http_build_query($query));
@@ -190,6 +193,29 @@ class EntryQuery
     {
         $this->ascending = $ascending;
         $this->sortField = $field;
+
+        return $this;
+    }
+
+    /**
+     * Whether or not to receive system fields for the entries.
+     *
+     * @api
+     *
+     * @param bool $system
+     *
+     * @since 0.1.0
+     *
+     * @return $this
+     */
+    public function getSystemFields($system = true)
+    {
+        // Per the API documentation, if 'system' is set to _anything_, then it'll return these fields. This is why we
+        // need to explicitly check for a true value
+        if ($system === true)
+        {
+            $this->system = 'true';
+        }
 
         return $this;
     }
