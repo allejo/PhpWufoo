@@ -11,7 +11,7 @@ matrix:
   allow_failures:
     - php: hhvm # https://github.com/php-vcr/php-vcr/issues/90
 
-dist: trusty
+dist: precise
 sudo: false
 
 cache:
