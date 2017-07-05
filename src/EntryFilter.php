@@ -3,6 +3,11 @@
 namespace allejo\Wufoo;
 
 /**
+ * An EntryFilter is used to filter through individual entries on a form.
+ *
+ * @api
+ * @since 0.1.0
+ *
  * @method static contains(string $v)
  * @method static doesNotContain(string $v)
  * @method static beginsWith(string $v)
@@ -69,6 +74,17 @@ class EntryFilter
         return $this;
     }
 
+    /**
+     * Convenience function to create an EntryFilter that can be used for immediate chaining.
+     *
+     * @api
+     *
+     * @param string $field The API Field ID to use in this filter
+     *
+     * @since 0.1.0
+     *
+     * @return EntryFilter
+     */
     public static function create($field)
     {
         $filter = new self($field);
