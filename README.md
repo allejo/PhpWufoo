@@ -1,5 +1,11 @@
 # PhpWufoo
 
+[![Stable Release](https://img.shields.io/packagist/v/allejo/php-wufoo.svg)](https://packagist.org/packages/allejo/php-wufoo)
+[![Dev Release](https://img.shields.io/packagist/vpre/allejo/php-wufoo.svg)](https://packagist.org/packages/allejo/php-wufoo)
+[![Build Status](https://travis-ci.org/allejo/PhpWufoo.svg?branch=master)](https://travis-ci.org/allejo/PhpWufoo)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/allejo/PhpWufoo/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/allejo/PhpWufoo/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/allejo/PhpWufoo/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/allejo/PhpWufoo/?branch=master)
+
 Another wrapper for the Wufoo API that takes a slightly different approach from the original and [its forks](https://github.com/adamlc/wufoo-php-api-wrapper).
 
 ## Usage
