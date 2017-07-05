@@ -51,4 +51,33 @@ class WufooFormTest extends \PHPUnit_Framework_TestCase
 
         $this->assertGreaterThan(0, $count);
     }
+
+    public function testWufooGetCommentsCount()
+    {
+        $form = new WufooForm(self::FORM_EXAMPLE);
+        $comments = $form->getComments();
+
+        $this->assertCount(3, $comments);
+        $this->assertCount($form->getCommentCount(), $comments);
+    }
+
+    public function testWufooGetComments()
+    {
+        $form = new WufooForm(self::FORM_EXAMPLE);
+        $commentsEntryEight = $form->getComments(8);
+
+        foreach ($commentsEntryEight as $comment)
+        {
+            $this->assertEquals(8, $comment['EntryId']);
+        }
+    }
+
+    public function testWufooGetCommentsPaging()
+    {
+        $form = new WufooForm(self::FORM_EXAMPLE);
+        $firstComment = $form->getComments(8, 0, 1);
+        $secondComment = $form->getComments(8, 1);
+
+        $this->assertNotEquals($firstComment, $secondComment);
+    }
 }
