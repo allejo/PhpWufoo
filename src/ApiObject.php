@@ -21,6 +21,14 @@ abstract class ApiObject
     /** @var Client */
     protected static $client;
 
+    protected function buildUrl($url)
+    {
+        return self::interpolate($url, [
+            'subdomain' => self::$subdomain,
+            'identifier' => $this->id,
+        ]);
+    }
+
     /**
      * @param string $subdomain The subdomain for your Wufoo account
      * @param string $key       The API key used to access this information
@@ -37,20 +45,12 @@ abstract class ApiObject
         ]);
     }
 
-    protected function buildUrl($url)
-    {
-        return self::interpolate($url, [
-            'subdomain' => self::$subdomain,
-            'identifier' => $this->id,
-        ]);
-    }
-
     /**
      * Sanitize an array of query parameters to prepare the array to be converted into a query string.
      *
      * @param array $parameters
      */
-    protected function prepareQueryParameters(array $parameters)
+    protected static function prepareQueryParameters(array $parameters)
     {
         foreach ($parameters as $parameter => $value)
         {
@@ -69,7 +69,7 @@ abstract class ApiObject
      *
      * @return string A query string ready for HTTP requests
      */
-    protected function buildQuery(array $parameters)
+    protected static function buildQuery(array $parameters)
     {
         return urldecode(http_build_query($parameters));
     }

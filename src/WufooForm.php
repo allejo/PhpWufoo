@@ -67,11 +67,15 @@ class WufooForm extends ApiObject
     public function getFields($getSystem = false)
     {
         $url = $this->buildUrl('https://{subdomain}.wufoo.com/api/v3/forms/{identifier}/fields.json');
-        $query = ($getSystem === true) ? 'system=true' : '';
+        $params = [
+            'system' => ($getSystem === true) ? 'true' : null
+        ];
+
+        self::prepareQueryParameters($params);
 
         $result = self::$client
             ->get($url, [
-                'query' => $query
+                'query' => self::buildQuery($params)
             ])
             ->getBody();
 
@@ -233,10 +237,15 @@ class WufooForm extends ApiObject
         $url = self::interpolate('https://{subdomain}.wufoo.com/api/v3/forms.json', [
             'subdomain' => self::$subdomain
         ]);
+        $params = [
+            'includeTodayCount' => ($includeTodayCount) ? 'true' : null
+        ];
+
+        self::prepareQueryParameters($params);
 
         $result = self::$client
             ->get($url, [
-                'query' => 'includeTodayCount=' . ($includeTodayCount) ? 'true' : 'false'
+                'query' => self::buildQuery($params)
             ])
             ->getBody();
 

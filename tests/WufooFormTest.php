@@ -9,6 +9,61 @@ class WufooFormTest extends \PHPUnit_Framework_TestCase
 {
     const FORM_EXAMPLE = 'wufoo-api-example';
 
+    public function testWufooGetAllForms()
+    {
+        $forms = WufooForm::getForms();
+
+        $this->assertCount(16, $forms);
+    }
+
+    public function testWufooGetAllFormsIncludeTodayCount()
+    {
+        $forms = WufooForm::getForms(true);
+
+        $this->assertCount(16, $forms);
+        $this->assertArrayHasKey('EntryCountToday', $forms[0]);
+    }
+
+    public function testWufooGetFields()
+    {
+        $form = new WufooForm(self::FORM_EXAMPLE);
+        $fields = $form->getFields();
+
+        $this->assertNotEmpty($fields);
+
+        $foundIsSystem = false;
+
+        foreach ($fields as $field)
+        {
+            if (isset($field['IsSystem']))
+            {
+                $foundIsSystem = true;
+                break;
+            }
+        }
+
+        $this->assertFalse($foundIsSystem);
+    }
+
+    public function testWufooGetFieldsWithSystem()
+    {
+        $form = new WufooForm(self::FORM_EXAMPLE);
+        $fields = $form->getFields(true);
+
+        $foundIsSystem = false;
+
+        foreach ($fields as $field)
+        {
+            if (isset($field['IsSystem']))
+            {
+                $foundIsSystem = true;
+                break;
+            }
+        }
+
+        $this->assertTrue($foundIsSystem);
+    }
+
     public function testWufooGetEntriesWithoutQuery()
     {
         $form = new WufooForm(self::FORM_EXAMPLE);
