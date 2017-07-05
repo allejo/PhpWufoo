@@ -116,6 +116,28 @@ class WufooForm extends ApiObject
     }
 
     /**
+     * Get the number of comments made on this form's entries.
+     *
+     * @api
+     *
+     * @since 0.1.0
+     *
+     * @return int
+     */
+    public function getCommentCount()
+    {
+        $url = $this->buildUrl('https://{subdomain}.wufoo.com/api/v3/forms/{identifier}/comments/count.json');
+
+        $result = self::$client
+            ->get($url)
+            ->getBody();
+
+        $json = json_decode($result, true);
+
+        return $json['Count'];
+    }
+
+    /**
      * Get the entries belonging to this form.
      *
      * **Warning:**
