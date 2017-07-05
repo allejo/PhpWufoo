@@ -70,6 +70,11 @@ class EntryQuery
 
     public function offset($offset)
     {
+        if (!is_int($offset))
+        {
+            throw new \InvalidArgumentException('$offset must be an integer.');
+        }
+
         $this->pageStart = $offset;
 
         return $this;
@@ -77,6 +82,11 @@ class EntryQuery
 
     public function limit($limit)
     {
+        if (!is_int($limit))
+        {
+            throw new \InvalidArgumentException('$limit must be an integer.');
+        }
+
         $this->pageSize = $limit;
 
         return $this;
@@ -84,8 +94,8 @@ class EntryQuery
 
     public function paginate($offset, $limit)
     {
-        $this->pageStart = $offset;
-        $this->pageSize = $limit;
+        $this->limit($limit);
+        $this->offset($offset);
 
         return $this;
     }
