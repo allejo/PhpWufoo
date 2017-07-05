@@ -8,18 +8,18 @@ namespace allejo\Wufoo;
  * @api
  * @since 0.1.0
  *
- * @method static contains(string $v)
- * @method static doesNotContain(string $v)
- * @method static beginsWith(string $v)
- * @method static endsWith(string $v)
- * @method static lessThan(integer $v)
- * @method static greaterThan(integer $v)
- * @method static on(\DateTime $v)
- * @method static before(\DateTime $v)
- * @method static after(\DateTime $v)
- * @method static equals(mixed $v)
- * @method static notEqualTo(mixed $v)
- * @method static notNull()
+ * @method $this contains(string $v)
+ * @method $this doesNotContain(string $v)
+ * @method $this beginsWith(string $v)
+ * @method $this endsWith(string $v)
+ * @method $this lessThan(integer $v)
+ * @method $this greaterThan(integer $v)
+ * @method $this on(\DateTime $v)
+ * @method $this before(\DateTime $v)
+ * @method $this after(\DateTime $v)
+ * @method $this equals(mixed $v)
+ * @method $this notEqualTo(mixed $v)
+ * @method $this notNull()
  */
 class EntryFilter extends ApiObject
 {
