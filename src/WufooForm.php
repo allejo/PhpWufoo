@@ -81,6 +81,41 @@ class WufooForm extends ApiObject
     }
 
     /**
+     * Get any comments made on this form's entries.
+     *
+     * @api
+     *
+     * @param int|null $entryID Get comments for only a specific entry
+     * @param int|null $offset  The offset of comments that
+     * @param int|null $limit   The number comments returned in the request (maximum of 100)
+     *
+     * @since 0.1.0
+     *
+     * @return array
+     */
+    public function getComments($entryID = null, $offset = null, $limit = null)
+    {
+        $url = $this->buildUrl('https://{subdomain}.wufoo.com/api/v3/forms/{identifier}/comments.json');
+        $params = [
+            'entryId' => $entryID,
+            'pageStart' => $offset,
+            'pageSize' => $limit
+        ];
+
+        self::prepareQueryParameters($params);
+
+        $result = self::$client
+            ->get($url, [
+                'query' => self::buildQuery($params)
+            ])
+            ->getBody();
+
+        $json = json_decode($result, true);
+
+        return $json['Comments'];
+    }
+
+    /**
      * Get the entries belonging to this form.
      *
      * **Warning:**
