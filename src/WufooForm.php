@@ -28,6 +28,59 @@ class WufooForm extends ApiObject
     }
 
     /**
+     * Get the details of this form.
+     *
+     * @api
+     *
+     * @param bool $includeTodayCount Set to true to include the number of entries received today.
+     *
+     * @since 0.1.0
+     *
+     * @return mixed
+     */
+    public function getDetails($includeTodayCount = false)
+    {
+        $url = $this->buildUrl('https://{subdomain}.wufoo.com/api/v3/forms/{identifier}.json');
+
+        $result = self::$client
+            ->get($url, [
+                'query' => 'includeTodayCount=' . ($includeTodayCount) ? 'true' : 'false'
+            ])
+            ->getBody();
+
+        $json = json_decode($result, true);
+
+        return $json['Forms'][0];
+    }
+
+    /**
+     * Get the fields in this form.
+     *
+     * @api
+     *
+     * @param bool $getSystem Set to true to receive
+     *
+     * @since 0.1.0
+     *
+     * @return array
+     */
+    public function getFields($getSystem = false)
+    {
+        $url = $this->buildUrl('https://{subdomain}.wufoo.com/api/v3/forms/{identifier}/fields.json');
+        $query = ($getSystem === true) ? 'system=true' : '';
+
+        $result = self::$client
+            ->get($url, [
+                'query' => $query
+            ])
+            ->getBody();
+
+        $json = json_decode($result, true);
+
+        return $json['Fields'];
+    }
+
+    /**
      * Get the entries belonging to this form.
      *
      * **Warning:**
@@ -105,5 +158,33 @@ class WufooForm extends ApiObject
         }
 
         return $json['EntryId'];
+    }
+
+    /**
+     * Get details of all the forms under this account.
+     *
+     * @api
+     *
+     * @param bool $includeTodayCount Set to true to include the number of entries received today.
+     *
+     * @since 0.1.0
+     *
+     * @return array
+     */
+    public static function getForms($includeTodayCount = false)
+    {
+        $url = self::interpolate('https://{subdomain}.wufoo.com/api/v3/forms.json', [
+            'subdomain' => self::$subdomain
+        ]);
+
+        $result = self::$client
+            ->get($url, [
+                'query' => 'includeTodayCount=' . ($includeTodayCount) ? 'true' : 'false'
+            ])
+            ->getBody();
+
+        $json = json_decode($result, true);
+
+        return $json['Forms'];
     }
 }
