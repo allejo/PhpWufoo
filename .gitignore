@@ -105,16 +105,13 @@ crashlytics-build.properties
 
 ### Composer ###
 composer.phar
+composer.lock
 vendor/
 output/
 
 # Build data
 /build/
-docs/_*
-api/
-
-# Composer PHAR
-/composer.phar
+docs/api/
 
 ### Grunt ###
 node_modules/

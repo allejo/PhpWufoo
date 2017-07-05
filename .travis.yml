@@ -22,7 +22,7 @@ cache:
 before_script:
   - composer self-update -q
   - if [ -n "$GH_TOKEN" ]; then composer config github-oauth.github.com ${GH_TOKEN}; fi;
-  - composer remove apigen/apigen && composer install --no-interaction --prefer-dist
+  - composer install --no-interaction --prefer-dist
 
 script:
   - mkdir -p build/logs
