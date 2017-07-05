@@ -70,4 +70,20 @@ class EntryQueryTest extends \PHPUnit_Framework_TestCase
 
         $this->assertEquals('sort=Field1&sortDirection=DESC', (string)$e);
     }
+
+    public function testGetSystemFields()
+    {
+        $e = new EntryQuery();
+        $e->getSystemFields();
+
+        $this->assertEquals('system=true', (string)$e);
+    }
+
+    public function testGetSystemFieldsNotAppear()
+    {
+        $e = new EntryQuery();
+        $e->getSystemFields(false);
+
+        $this->assertEquals('', (string)$e);
+    }
 }
