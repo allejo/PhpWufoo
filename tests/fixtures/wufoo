@@ -1,0 +1,359 @@
+
+-
+    request:
+        method: GET
+        url: 'https://fishbowl.wufoo.com/api/v3/forms.json'
+        headers:
+            Host: fishbowl.wufoo.com
+            Accept-Encoding: null
+            User-Agent: 'GuzzleHttp/6.2.1 curl/7.51.0 PHP/7.1.5'
+            Authorization: 'Basic QU9JNi1MRktMLVZNMVEtSUVYOTpQaHBXdWZvbw=='
+            Accept: null
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Date: 'Mon, 10 Jul 2017 19:18:47 GMT'
+            Set-Cookie: 'PHPSESSID=1kcsbor5f5crand9g0q4gib7a1; path=/; domain=.wufoo.com, ep201=+vceGDR7WqT0lObqZkVrY+Vl+hI=;Path=/;Domain=.wufoo.com;Expires=Mon, 10-Jul-2017 19:48:47 GMT, ep202=NyQ+9K89BNqk5B4WvDheFwwe1iE=;Path=/;Domain=.wufoo.com;Expires=Wed, 11-Jul-2018 01:07:33 GMT'
+            Expires: '0'
+            Cache-Control: 'must-revalidate, post-check=0, pre-check=0, private'
+            Pragma: public
+            X-Frame-Options: SAMEORIGIN
+            X-UA-Compatible: 'IE=Edge,chrome=1'
+            Transfer-Encoding: chunked
+            Content-Type: 'application/json; charset=utf-8'
+            X-Powered-By: 'Bananas and Rum'
+            Vary: Accept-Encoding
+        body: '{"Forms":[{"Name":"Amazon Mechanical Turk","Description":"A test run with a live form on integration with Mechanical Turk.","RedirectMessage":"Success! Thanks for filling out my form!","Url":"amazon-mechanical-turk","Email":"","IsPublic":"1","Language":"english","StartDate":"2001-01-01 12:00:00","EndDate":"2030-01-01 12:00:00","EntryLimit":"0","DateCreated":"0000-00-00 00:00:00","DateUpdated":"0000-00-00 00:00:00","Hash":"qa4d98l1ib9or7","LinkFields":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/qa4d98l1ib9or7\/fields.json","LinkEntries":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/qa4d98l1ib9or7\/entries.json","LinkEntriesCount":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/qa4d98l1ib9or7\/entries\/count.json"},{"Name":"Api Submit Example","Description":"This is my form. Please fill it out. It''s awesome!","RedirectMessage":"Success! Thanks for filling out my form!","Url":"api-submit-example","Email":"","IsPublic":"1","Language":"english","StartDate":"2000-01-01 12:00:00","EndDate":"2030-01-01 12:00:00","EntryLimit":"0","DateCreated":"2010-07-07 14:51:14","DateUpdated":"2015-06-01 13:40:44","Hash":"psy5irt0bq4brj","LinkFields":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/psy5irt0bq4brj\/fields.json","LinkEntries":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/psy5irt0bq4brj\/entries.json","LinkEntriesCount":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/psy5irt0bq4brj\/entries\/count.json"},{"Name":"Contact Form","Description":"This is my form. Please fill it out. It''s awesome!","RedirectMessage":"Great! Thanks for filling out my form!","Url":"contact-form","Email":"","IsPublic":"1","Language":"english","StartDate":"2000-01-01 12:00:00","EndDate":"2030-01-01 12:00:00","EntryLimit":"0","DateCreated":"2017-04-03 11:16:34","DateUpdated":"2017-04-03 11:16:34","Hash":"z16v7rw70z3tnng","LinkFields":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/z16v7rw70z3tnng\/fields.json","LinkEntries":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/z16v7rw70z3tnng\/entries.json","LinkEntriesCount":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/z16v7rw70z3tnng\/entries\/count.json"},{"Name":"Date POST","Description":"This is my form. Please fill it out. It''s awesome!","RedirectMessage":"Great! Thanks for filling out my form!","Url":"date-post","Email":"","IsPublic":"1","Language":"english","StartDate":"2015-06-09 13:00:00","EndDate":"2030-01-01 12:00:00","EntryLimit":"0","DateCreated":"2015-06-09 09:27:08","DateUpdated":"2015-06-09 10:40:22","Hash":"z1si67kn0abli7i","LinkFields":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/z1si67kn0abli7i\/fields.json","LinkEntries":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/z1si67kn0abli7i\/entries.json","LinkEntriesCount":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/z1si67kn0abli7i\/entries\/count.json"},{"Name":"Favorite Color Of","Description":"Pick your favorite color of different objects.","RedirectMessage":"Success! Thanks for filling out my form!","Url":"favorite-color-of","Email":"","IsPublic":"1","Language":"english","StartDate":"2000-01-01 12:00:00","EndDate":"2030-01-01 12:00:00","EntryLimit":"0","DateCreated":"0000-00-00 00:00:00","DateUpdated":"0000-00-00 00:00:00","Hash":"mbrtcpw036ecgn","LinkFields":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/mbrtcpw036ecgn\/fields.json","LinkEntries":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/mbrtcpw036ecgn\/entries.json","LinkEntriesCount":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/mbrtcpw036ecgn\/entries\/count.json"},{"Name":"Feedback","Description":"Tell us what you''re thinking.","RedirectMessage":"Success! Thanks for filling out my form!","Url":"feedback","Email":"","IsPublic":"1","Language":"english","StartDate":"2000-01-01 12:00:00","EndDate":"2030-01-01 12:00:00","EntryLimit":"0","DateCreated":"0000-00-00 00:00:00","DateUpdated":"0000-00-00 00:00:00","Hash":"rohqt9310704os","LinkFields":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/rohqt9310704os\/fields.json","LinkEntries":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/rohqt9310704os\/entries.json","LinkEntriesCount":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/rohqt9310704os\/entries\/count.json"},{"Name":"Field Matching","Description":"This is my form. Please fill it out. It''s awesome!","RedirectMessage":"Success! Thanks for filling out my form!","Url":"field-matching","Email":"","IsPublic":"1","Language":"english","StartDate":"2000-01-01 12:00:00","EndDate":"2030-01-01 12:00:00","EntryLimit":"0","DateCreated":"2010-08-25 19:13:53","DateUpdated":"2010-08-25 19:13:53","Hash":"x1vvypmz0ohns3e","LinkFields":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/x1vvypmz0ohns3e\/fields.json","LinkEntries":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/x1vvypmz0ohns3e\/entries.json","LinkEntriesCount":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/x1vvypmz0ohns3e\/entries\/count.json"},{"Name":"Order Form","Description":"This is my form. Please fill it out. It''s awesome!","RedirectMessage":"Great! Thanks for filling out my form!","Url":"order-form","Email":"","IsPublic":"1","Language":"english","StartDate":"2000-01-01 12:00:00","EndDate":"2030-01-01 12:00:00","EntryLimit":"0","DateCreated":"2017-04-03 11:14:46","DateUpdated":"2017-04-03 11:14:54","Hash":"z17vwypt1oybggv","LinkFields":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/z17vwypt1oybggv\/fields.json","LinkEntries":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/z17vwypt1oybggv\/entries.json","LinkEntriesCount":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/z17vwypt1oybggv\/entries\/count.json"},{"Name":"Timezone","Description":"This is my form. Please fill it out. It''s awesome!","RedirectMessage":"Great! Thanks for filling out my form!","Url":"timezone","Email":"","IsPublic":"1","Language":"english","StartDate":"2015-06-09 13:00:00","EndDate":"2030-01-01 12:00:00","EntryLimit":"0","DateCreated":"2015-06-09 10:19:33","DateUpdated":"2015-11-17 07:32:55","Hash":"z10r12k0pi1rb5","LinkFields":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/z10r12k0pi1rb5\/fields.json","LinkEntries":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/z10r12k0pi1rb5\/entries.json","LinkEntriesCount":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/z10r12k0pi1rb5\/entries\/count.json"},{"Name":"Tiny Form","Description":"This is my form. Please fill it out. It''s awesome!","RedirectMessage":"Great! Thanks for filling out my form!","Url":"tiny-form","Email":"","IsPublic":"1","Language":"english","StartDate":"2000-01-01 12:00:00","EndDate":"2030-01-01 12:00:00","EntryLimit":"0","DateCreated":"2012-02-22 15:35:33","DateUpdated":"2015-06-01 13:40:00","Hash":"kvikd1a1n54u3f","LinkFields":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/kvikd1a1n54u3f\/fields.json","LinkEntries":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/kvikd1a1n54u3f\/entries.json","LinkEntriesCount":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/kvikd1a1n54u3f\/entries\/count.json"},{"Name":"Unit Testing","Description":"A demo form for the Wufoo API.","RedirectMessage":"Success! Thanks for filling out my form!","Url":"unit-testing","Email":"","IsPublic":"1","Language":"english","StartDate":"2001-01-01 12:00:00","EndDate":"2030-01-01 12:00:00","EntryLimit":"0","DateCreated":"0000-00-00 00:00:00","DateUpdated":"0000-00-00 00:00:00","Hash":"z1qlusp218ylc12","LinkFields":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/z1qlusp218ylc12\/fields.json","LinkEntries":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/z1qlusp218ylc12\/entries.json","LinkEntriesCount":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/z1qlusp218ylc12\/entries\/count.json"},{"Name":"Untitled Form","Description":"This is my form. Please fill it out. It''s awesome!","RedirectMessage":"Great! Thanks for filling out my form!","Url":"untitled-form","Email":"","IsPublic":"1","Language":"english","StartDate":"2000-01-01 12:00:00","EndDate":"2030-01-01 12:00:00","EntryLimit":"0","DateCreated":"2017-04-03 11:14:46","DateUpdated":"2017-04-03 11:14:46","Hash":"z1y8ss2b0oz6awy","LinkFields":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/z1y8ss2b0oz6awy\/fields.json","LinkEntries":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/z1y8ss2b0oz6awy\/entries.json","LinkEntriesCount":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/z1y8ss2b0oz6awy\/entries\/count.json"},{"Name":"Visibility","Description":"This is my form. Please fill it out. It''s awesome!","RedirectMessage":"Great! Thanks for filling out my form!","Url":"visibility","Email":"","IsPublic":"1","Language":"english","StartDate":"2000-01-01 12:00:00","EndDate":"2030-01-01 12:00:00","EntryLimit":"0","DateCreated":"2015-06-08 14:57:23","DateUpdated":"2015-06-08 14:58:17","Hash":"z595yw60pm9d30","LinkFields":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/z595yw60pm9d30\/fields.json","LinkEntries":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/z595yw60pm9d30\/entries.json","LinkEntriesCount":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/z595yw60pm9d30\/entries\/count.json"},{"Name":"Web Hook Example","Description":"This is my form. Please fill it out. It''s awesome!","RedirectMessage":"Hey, check out your submission <a href=\"http:\/\/requestb.in\/1bepy3z1?inspect\">here<\/a>.  \n\nRemember, these calls are made asynchronously, so it may take a few refreshes of Requestb.in before you see yours.  ","Url":"web-hook-example","Email":"","IsPublic":"1","Language":"english","StartDate":"2000-01-01 12:00:00","EndDate":"2030-01-01 12:00:00","EntryLimit":"0","DateCreated":"2010-01-20 14:41:12","DateUpdated":"2015-04-17 06:10:59","Hash":"wb2xgwf0gskbda","LinkFields":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/wb2xgwf0gskbda\/fields.json","LinkEntries":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/wb2xgwf0gskbda\/entries.json","LinkEntriesCount":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/wb2xgwf0gskbda\/entries\/count.json"},{"Name":"Wufoo API Example","Description":"This is my form. Please fill it out. It''s awesome!","RedirectMessage":"Success! Thanks for filling out my form!","Url":"wufoo-api-example","Email":"","IsPublic":"1","Language":"english","StartDate":"2000-01-01 12:00:00","EndDate":"2030-01-01 12:00:00","EntryLimit":"0","DateCreated":"0000-00-00 00:00:00","DateUpdated":"2015-06-25 14:38:36","Hash":"s1afea8b1vk0jf7","LinkFields":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/s1afea8b1vk0jf7\/fields.json","LinkEntries":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/s1afea8b1vk0jf7\/entries.json","LinkEntriesCount":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/s1afea8b1vk0jf7\/entries\/count.json"},{"Name":"Wufoo API Example Copy","Description":"This is my form. Please fill it out. It''s awesome!","RedirectMessage":"Success! Thanks for filling out my form!","Url":"wufoo-api-example-copy","Email":"","IsPublic":"1","Language":"english","StartDate":"2000-01-01 12:00:00","EndDate":"2030-01-01 12:00:00","EntryLimit":"0","DateCreated":"0000-00-00 00:00:00","DateUpdated":"2015-06-01 13:59:06","Hash":"ziuprim0wk0pg7","LinkFields":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/ziuprim0wk0pg7\/fields.json","LinkEntries":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/ziuprim0wk0pg7\/entries.json","LinkEntriesCount":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/ziuprim0wk0pg7\/entries\/count.json"}]}'
+-
+    request:
+        method: GET
+        url: 'https://fishbowl.wufoo.com/api/v3/forms.json?includeTodayCount=true'
+        headers:
+            Host: fishbowl.wufoo.com
+            Accept-Encoding: null
+            User-Agent: 'GuzzleHttp/6.2.1 curl/7.51.0 PHP/7.1.5'
+            Authorization: 'Basic QU9JNi1MRktMLVZNMVEtSUVYOTpQaHBXdWZvbw=='
+            Accept: null
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Date: 'Mon, 10 Jul 2017 19:18:47 GMT'
+            Set-Cookie: 'PHPSESSID=aup889nild0io6a4tmdn8ua1n3; path=/; domain=.wufoo.com, ep201=J2MwqBBcS/0xQCcmsSRZYbcdaqg=;Path=/;Domain=.wufoo.com;Expires=Mon, 10-Jul-2017 19:48:47 GMT, ep202=pu1Sp/iWT7DfS0ozLUq7pWaIh+Q=;Path=/;Domain=.wufoo.com;Expires=Wed, 11-Jul-2018 01:07:33 GMT'
+            Expires: '0'
+            Cache-Control: 'must-revalidate, post-check=0, pre-check=0, private'
+            Pragma: public
+            X-Frame-Options: SAMEORIGIN
+            X-UA-Compatible: 'IE=Edge,chrome=1'
+            Transfer-Encoding: chunked
+            Content-Type: 'application/json; charset=utf-8'
+            X-Powered-By: 'Bananas and Rum'
+            Vary: Accept-Encoding
+        body: '{"Forms":[{"Name":"Amazon Mechanical Turk","Description":"A test run with a live form on integration with Mechanical Turk.","RedirectMessage":"Success! Thanks for filling out my form!","Url":"amazon-mechanical-turk","Email":"","IsPublic":"1","Language":"english","StartDate":"2001-01-01 12:00:00","EndDate":"2030-01-01 12:00:00","EntryLimit":"0","DateCreated":"0000-00-00 00:00:00","DateUpdated":"0000-00-00 00:00:00","Hash":"qa4d98l1ib9or7","LinkFields":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/qa4d98l1ib9or7\/fields.json?includeTodayCount=true","LinkEntries":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/qa4d98l1ib9or7\/entries.json?includeTodayCount=true","LinkEntriesCount":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/qa4d98l1ib9or7\/entries\/count.json?includeTodayCount=true","EntryCountToday":"0"},{"Name":"Api Submit Example","Description":"This is my form. Please fill it out. It''s awesome!","RedirectMessage":"Success! Thanks for filling out my form!","Url":"api-submit-example","Email":"","IsPublic":"1","Language":"english","StartDate":"2000-01-01 12:00:00","EndDate":"2030-01-01 12:00:00","EntryLimit":"0","DateCreated":"2010-07-07 14:51:14","DateUpdated":"2015-06-01 13:40:44","Hash":"psy5irt0bq4brj","LinkFields":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/psy5irt0bq4brj\/fields.json?includeTodayCount=true","LinkEntries":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/psy5irt0bq4brj\/entries.json?includeTodayCount=true","LinkEntriesCount":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/psy5irt0bq4brj\/entries\/count.json?includeTodayCount=true","EntryCountToday":"0"},{"Name":"Contact Form","Description":"This is my form. Please fill it out. It''s awesome!","RedirectMessage":"Great! Thanks for filling out my form!","Url":"contact-form","Email":"","IsPublic":"1","Language":"english","StartDate":"2000-01-01 12:00:00","EndDate":"2030-01-01 12:00:00","EntryLimit":"0","DateCreated":"2017-04-03 11:16:34","DateUpdated":"2017-04-03 11:16:34","Hash":"z16v7rw70z3tnng","LinkFields":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/z16v7rw70z3tnng\/fields.json?includeTodayCount=true","LinkEntries":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/z16v7rw70z3tnng\/entries.json?includeTodayCount=true","LinkEntriesCount":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/z16v7rw70z3tnng\/entries\/count.json?includeTodayCount=true","EntryCountToday":"0"},{"Name":"Date POST","Description":"This is my form. Please fill it out. It''s awesome!","RedirectMessage":"Great! Thanks for filling out my form!","Url":"date-post","Email":"","IsPublic":"1","Language":"english","StartDate":"2015-06-09 13:00:00","EndDate":"2030-01-01 12:00:00","EntryLimit":"0","DateCreated":"2015-06-09 09:27:08","DateUpdated":"2015-06-09 10:40:22","Hash":"z1si67kn0abli7i","LinkFields":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/z1si67kn0abli7i\/fields.json?includeTodayCount=true","LinkEntries":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/z1si67kn0abli7i\/entries.json?includeTodayCount=true","LinkEntriesCount":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/z1si67kn0abli7i\/entries\/count.json?includeTodayCount=true","EntryCountToday":"0"},{"Name":"Favorite Color Of","Description":"Pick your favorite color of different objects.","RedirectMessage":"Success! Thanks for filling out my form!","Url":"favorite-color-of","Email":"","IsPublic":"1","Language":"english","StartDate":"2000-01-01 12:00:00","EndDate":"2030-01-01 12:00:00","EntryLimit":"0","DateCreated":"0000-00-00 00:00:00","DateUpdated":"0000-00-00 00:00:00","Hash":"mbrtcpw036ecgn","LinkFields":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/mbrtcpw036ecgn\/fields.json?includeTodayCount=true","LinkEntries":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/mbrtcpw036ecgn\/entries.json?includeTodayCount=true","LinkEntriesCount":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/mbrtcpw036ecgn\/entries\/count.json?includeTodayCount=true","EntryCountToday":"0"},{"Name":"Feedback","Description":"Tell us what you''re thinking.","RedirectMessage":"Success! Thanks for filling out my form!","Url":"feedback","Email":"","IsPublic":"1","Language":"english","StartDate":"2000-01-01 12:00:00","EndDate":"2030-01-01 12:00:00","EntryLimit":"0","DateCreated":"0000-00-00 00:00:00","DateUpdated":"0000-00-00 00:00:00","Hash":"rohqt9310704os","LinkFields":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/rohqt9310704os\/fields.json?includeTodayCount=true","LinkEntries":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/rohqt9310704os\/entries.json?includeTodayCount=true","LinkEntriesCount":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/rohqt9310704os\/entries\/count.json?includeTodayCount=true","EntryCountToday":"0"},{"Name":"Field Matching","Description":"This is my form. Please fill it out. It''s awesome!","RedirectMessage":"Success! Thanks for filling out my form!","Url":"field-matching","Email":"","IsPublic":"1","Language":"english","StartDate":"2000-01-01 12:00:00","EndDate":"2030-01-01 12:00:00","EntryLimit":"0","DateCreated":"2010-08-25 19:13:53","DateUpdated":"2010-08-25 19:13:53","Hash":"x1vvypmz0ohns3e","LinkFields":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/x1vvypmz0ohns3e\/fields.json?includeTodayCount=true","LinkEntries":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/x1vvypmz0ohns3e\/entries.json?includeTodayCount=true","LinkEntriesCount":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/x1vvypmz0ohns3e\/entries\/count.json?includeTodayCount=true","EntryCountToday":"0"},{"Name":"Order Form","Description":"This is my form. Please fill it out. It''s awesome!","RedirectMessage":"Great! Thanks for filling out my form!","Url":"order-form","Email":"","IsPublic":"1","Language":"english","StartDate":"2000-01-01 12:00:00","EndDate":"2030-01-01 12:00:00","EntryLimit":"0","DateCreated":"2017-04-03 11:14:46","DateUpdated":"2017-04-03 11:14:54","Hash":"z17vwypt1oybggv","LinkFields":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/z17vwypt1oybggv\/fields.json?includeTodayCount=true","LinkEntries":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/z17vwypt1oybggv\/entries.json?includeTodayCount=true","LinkEntriesCount":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/z17vwypt1oybggv\/entries\/count.json?includeTodayCount=true","EntryCountToday":"0"},{"Name":"Timezone","Description":"This is my form. Please fill it out. It''s awesome!","RedirectMessage":"Great! Thanks for filling out my form!","Url":"timezone","Email":"","IsPublic":"1","Language":"english","StartDate":"2015-06-09 13:00:00","EndDate":"2030-01-01 12:00:00","EntryLimit":"0","DateCreated":"2015-06-09 10:19:33","DateUpdated":"2015-11-17 07:32:55","Hash":"z10r12k0pi1rb5","LinkFields":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/z10r12k0pi1rb5\/fields.json?includeTodayCount=true","LinkEntries":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/z10r12k0pi1rb5\/entries.json?includeTodayCount=true","LinkEntriesCount":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/z10r12k0pi1rb5\/entries\/count.json?includeTodayCount=true","EntryCountToday":"0"},{"Name":"Tiny Form","Description":"This is my form. Please fill it out. It''s awesome!","RedirectMessage":"Great! Thanks for filling out my form!","Url":"tiny-form","Email":"","IsPublic":"1","Language":"english","StartDate":"2000-01-01 12:00:00","EndDate":"2030-01-01 12:00:00","EntryLimit":"0","DateCreated":"2012-02-22 15:35:33","DateUpdated":"2015-06-01 13:40:00","Hash":"kvikd1a1n54u3f","LinkFields":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/kvikd1a1n54u3f\/fields.json?includeTodayCount=true","LinkEntries":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/kvikd1a1n54u3f\/entries.json?includeTodayCount=true","LinkEntriesCount":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/kvikd1a1n54u3f\/entries\/count.json?includeTodayCount=true","EntryCountToday":"0"},{"Name":"Unit Testing","Description":"A demo form for the Wufoo API.","RedirectMessage":"Success! Thanks for filling out my form!","Url":"unit-testing","Email":"","IsPublic":"1","Language":"english","StartDate":"2001-01-01 12:00:00","EndDate":"2030-01-01 12:00:00","EntryLimit":"0","DateCreated":"0000-00-00 00:00:00","DateUpdated":"0000-00-00 00:00:00","Hash":"z1qlusp218ylc12","LinkFields":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/z1qlusp218ylc12\/fields.json?includeTodayCount=true","LinkEntries":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/z1qlusp218ylc12\/entries.json?includeTodayCount=true","LinkEntriesCount":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/z1qlusp218ylc12\/entries\/count.json?includeTodayCount=true","EntryCountToday":"0"},{"Name":"Untitled Form","Description":"This is my form. Please fill it out. It''s awesome!","RedirectMessage":"Great! Thanks for filling out my form!","Url":"untitled-form","Email":"","IsPublic":"1","Language":"english","StartDate":"2000-01-01 12:00:00","EndDate":"2030-01-01 12:00:00","EntryLimit":"0","DateCreated":"2017-04-03 11:14:46","DateUpdated":"2017-04-03 11:14:46","Hash":"z1y8ss2b0oz6awy","LinkFields":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/z1y8ss2b0oz6awy\/fields.json?includeTodayCount=true","LinkEntries":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/z1y8ss2b0oz6awy\/entries.json?includeTodayCount=true","LinkEntriesCount":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/z1y8ss2b0oz6awy\/entries\/count.json?includeTodayCount=true","EntryCountToday":"0"},{"Name":"Visibility","Description":"This is my form. Please fill it out. It''s awesome!","RedirectMessage":"Great! Thanks for filling out my form!","Url":"visibility","Email":"","IsPublic":"1","Language":"english","StartDate":"2000-01-01 12:00:00","EndDate":"2030-01-01 12:00:00","EntryLimit":"0","DateCreated":"2015-06-08 14:57:23","DateUpdated":"2015-06-08 14:58:17","Hash":"z595yw60pm9d30","LinkFields":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/z595yw60pm9d30\/fields.json?includeTodayCount=true","LinkEntries":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/z595yw60pm9d30\/entries.json?includeTodayCount=true","LinkEntriesCount":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/z595yw60pm9d30\/entries\/count.json?includeTodayCount=true","EntryCountToday":"0"},{"Name":"Web Hook Example","Description":"This is my form. Please fill it out. It''s awesome!","RedirectMessage":"Hey, check out your submission <a href=\"http:\/\/requestb.in\/1bepy3z1?inspect\">here<\/a>.  \n\nRemember, these calls are made asynchronously, so it may take a few refreshes of Requestb.in before you see yours.  ","Url":"web-hook-example","Email":"","IsPublic":"1","Language":"english","StartDate":"2000-01-01 12:00:00","EndDate":"2030-01-01 12:00:00","EntryLimit":"0","DateCreated":"2010-01-20 14:41:12","DateUpdated":"2015-04-17 06:10:59","Hash":"wb2xgwf0gskbda","LinkFields":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/wb2xgwf0gskbda\/fields.json?includeTodayCount=true","LinkEntries":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/wb2xgwf0gskbda\/entries.json?includeTodayCount=true","LinkEntriesCount":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/wb2xgwf0gskbda\/entries\/count.json?includeTodayCount=true","EntryCountToday":"0"},{"Name":"Wufoo API Example","Description":"This is my form. Please fill it out. It''s awesome!","RedirectMessage":"Success! Thanks for filling out my form!","Url":"wufoo-api-example","Email":"","IsPublic":"1","Language":"english","StartDate":"2000-01-01 12:00:00","EndDate":"2030-01-01 12:00:00","EntryLimit":"0","DateCreated":"0000-00-00 00:00:00","DateUpdated":"2015-06-25 14:38:36","Hash":"s1afea8b1vk0jf7","LinkFields":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/s1afea8b1vk0jf7\/fields.json?includeTodayCount=true","LinkEntries":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/s1afea8b1vk0jf7\/entries.json?includeTodayCount=true","LinkEntriesCount":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/s1afea8b1vk0jf7\/entries\/count.json?includeTodayCount=true","EntryCountToday":"0"},{"Name":"Wufoo API Example Copy","Description":"This is my form. Please fill it out. It''s awesome!","RedirectMessage":"Success! Thanks for filling out my form!","Url":"wufoo-api-example-copy","Email":"","IsPublic":"1","Language":"english","StartDate":"2000-01-01 12:00:00","EndDate":"2030-01-01 12:00:00","EntryLimit":"0","DateCreated":"0000-00-00 00:00:00","DateUpdated":"2015-06-01 13:59:06","Hash":"ziuprim0wk0pg7","LinkFields":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/ziuprim0wk0pg7\/fields.json?includeTodayCount=true","LinkEntries":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/ziuprim0wk0pg7\/entries.json?includeTodayCount=true","LinkEntriesCount":"https:\/\/fishbowl.wufoo.com\/api\/v3\/forms\/ziuprim0wk0pg7\/entries\/count.json?includeTodayCount=true","EntryCountToday":"0"}]}'
+-
+    request:
+        method: GET
+        url: 'https://fishbowl.wufoo.com/api/v3/forms/wufoo-api-example/fields.json'
+        headers:
+            Host: fishbowl.wufoo.com
+            Accept-Encoding: null
+            User-Agent: 'GuzzleHttp/6.2.1 curl/7.51.0 PHP/7.1.5'
+            Authorization: 'Basic QU9JNi1MRktMLVZNMVEtSUVYOTpQaHBXdWZvbw=='
+            Accept: null
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Date: 'Mon, 10 Jul 2017 19:18:48 GMT'
+            Set-Cookie: 'PHPSESSID=4r6evdiprd0lnioaim6mar67m3; path=/; domain=.wufoo.com, ep201=4GGJjKmCDtrpinCcXie9kvZdsyk=;Path=/;Domain=.wufoo.com;Expires=Mon, 10-Jul-2017 19:48:48 GMT, ep202=Q1yG4NDnggDprFGJrIKnu0gomrU=;Path=/;Domain=.wufoo.com;Expires=Wed, 11-Jul-2018 01:07:34 GMT'
+            Expires: '0'
+            Cache-Control: 'must-revalidate, post-check=0, pre-check=0, private'
+            Pragma: public
+            X-Frame-Options: SAMEORIGIN
+            X-UA-Compatible: 'IE=Edge,chrome=1'
+            Content-Length: '3776'
+            Content-Type: 'application/json; charset=utf-8'
+            X-Powered-By: 'Bananas and Rum'
+            Vary: Accept-Encoding
+        body: '{"Fields":[{"Title":"Entry Id","Type":"text","ID":"EntryId"},{"Title":"Single Line Text","Instructions":"","IsRequired":"1","ClassNames":"","DefaultVal":"","Page":"1","Type":"text","ID":"Field105"},{"Title":"Number","Instructions":"","IsRequired":"0","ClassNames":"","DefaultVal":"","Page":"1","Type":"number","ID":"Field106"},{"Title":"Paragraph","Instructions":"","IsRequired":"0","ClassNames":"","DefaultVal":"","Page":"1","Type":"textarea","ID":"Field107"},{"Title":"Checkbox","Instructions":"","IsRequired":"0","ClassNames":"","DefaultVal":"0","Page":"1","SubFields":[{"DefaultVal":"0","ID":"Field108","Label":"Check One"},{"DefaultVal":"0","ID":"Field109","Label":"Check Two"},{"DefaultVal":"0","ID":"Field110","Label":"Check Three"}],"Type":"checkbox","ID":"Field108"},{"Title":"Multiple Choice","Instructions":"","IsRequired":"0","ClassNames":"","DefaultVal":"","Page":"1","Choices":[{"Label":"MC One"},{"Label":"MC Two"},{"Label":"MC Three"}],"Type":"radio","ID":"Field208","HasOtherField":false},{"Title":"Dropdown","Instructions":"","IsRequired":"0","ClassNames":"","DefaultVal":"","Page":"1","Choices":[{"Label":""},{"Label":"Dropdown One"},{"Label":"Dropdown Two"},{"Label":"Dropdown Three"}],"Type":"select","ID":"Field209","HasOtherField":false},{"Title":"Name","Instructions":"","IsRequired":"0","ClassNames":"","DefaultVal":"","Page":"1","SubFields":[{"DefaultVal":"","ID":"Field1","Label":"First"},{"DefaultVal":"","ID":"Field2","Label":"Last"}],"Type":"shortname","ID":"Field1"},{"Title":"File Upload","Instructions":"","IsRequired":"0","ClassNames":"","DefaultVal":"","Page":"1","Type":"file","ID":"Field210"},{"Title":"Address","Instructions":"","IsRequired":"0","ClassNames":"","DefaultVal":"","Page":"1","SubFields":[{"DefaultVal":"","ID":"Field211","Label":"Street Address"},{"DefaultVal":"","ID":"Field212","Label":"Address Line 2"},{"DefaultVal":"","ID":"Field213","Label":"City"},{"DefaultVal":"","ID":"Field214","Label":"State \/ Province \/ Region"},{"DefaultVal":"","ID":"Field215","Label":"Postal \/ Zip Code"},{"DefaultVal":"","ID":"Field216","Label":"Country"}],"Type":"address","ID":"Field211"},{"Title":"Date","Instructions":"","IsRequired":"0","ClassNames":"","DefaultVal":"","Page":"1","Type":"date","ID":"Field217"},{"Title":"Email","Instructions":"","IsRequired":"0","ClassNames":"","DefaultVal":"","Page":"1","Type":"email","ID":"Field218"},{"Title":"Time","Instructions":"","IsRequired":"0","ClassNames":"","DefaultVal":"","Page":"1","Type":"time","ID":"Field219"},{"Title":"Phone Number","Instructions":"","IsRequired":"0","ClassNames":"","DefaultVal":"","Page":"1","Type":"phone","ID":"Field220"},{"Title":"Website","Instructions":"","IsRequired":"0","ClassNames":"","DefaultVal":"","Page":"1","Type":"url","ID":"Field221"},{"Title":"Amount","Instructions":"","IsRequired":"0","ClassNames":"","DefaultVal":"","Page":"1","Type":"money","ID":"Field222"},{"Title":"Likert: Evaluate the following statements.","Instructions":"","IsRequired":"0","ClassNames":"","DefaultVal":"0","Page":"1","SubFields":[{"DefaultVal":"0","ID":"Field4","Label":"Wufoo is Fun"},{"DefaultVal":"0","ID":"Field5","Label":"Wufoo Is Pretty"},{"DefaultVal":"0","ID":"Field6","Label":"Wufoo is Your Friend"}],"Choices":[{"Score":1,"Label":"Strongly Disagree"},{"Score":2,"Label":"Disagree"},{"Score":3,"Label":"Agree"},{"Score":4,"Label":"Strongly Agree"}],"Type":"likert","ID":"Field4","HasOtherField":false},{"Title":"Rating","Instructions":"","IsRequired":"0","ClassNames":"","DefaultVal":"","Page":"1","Type":"rating","ID":"Field223"},{"Title":"Date Created","Type":"date","ID":"DateCreated"},{"Title":"Created By","Type":"text","ID":"CreatedBy"},{"Title":"Last Updated","Type":"date","ID":"LastUpdated"},{"Title":"Updated By","Type":"text","ID":"UpdatedBy"}]}'
+-
+    request:
+        method: GET
+        url: 'https://fishbowl.wufoo.com/api/v3/forms/wufoo-api-example/fields.json?system=true'
+        headers:
+            Host: fishbowl.wufoo.com
+            Accept-Encoding: null
+            User-Agent: 'GuzzleHttp/6.2.1 curl/7.51.0 PHP/7.1.5'
+            Authorization: 'Basic QU9JNi1MRktMLVZNMVEtSUVYOTpQaHBXdWZvbw=='
+            Accept: null
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Date: 'Mon, 10 Jul 2017 19:18:48 GMT'
+            Set-Cookie: 'PHPSESSID=2lnqqe4b8nk4q5a5lejqipt2k7; path=/; domain=.wufoo.com, ep201=bc5RIS+/ppc/w7OprXqp9WltWXk=;Path=/;Domain=.wufoo.com;Expires=Mon, 10-Jul-2017 19:48:48 GMT, ep202=aOaxvFVnaIjwk64kpIqQVmSmkBA=;Path=/;Domain=.wufoo.com;Expires=Wed, 11-Jul-2018 01:07:34 GMT'
+            Expires: '0'
+            Cache-Control: 'must-revalidate, post-check=0, pre-check=0, private'
+            Pragma: public
+            X-Frame-Options: SAMEORIGIN
+            X-UA-Compatible: 'IE=Edge,chrome=1'
+            Content-Length: '4002'
+            Content-Type: 'application/json; charset=utf-8'
+            X-Powered-By: 'Bananas and Rum'
+            Vary: Accept-Encoding
+        body: '{"Fields":[{"Title":"Entry Id","Type":"text","ID":"EntryId"},{"Title":"Single Line Text","Instructions":"","IsRequired":"1","ClassNames":"","DefaultVal":"","Page":"1","Type":"text","ID":"Field105"},{"Title":"Number","Instructions":"","IsRequired":"0","ClassNames":"","DefaultVal":"","Page":"1","Type":"number","ID":"Field106"},{"Title":"Paragraph","Instructions":"","IsRequired":"0","ClassNames":"","DefaultVal":"","Page":"1","Type":"textarea","ID":"Field107"},{"Title":"Checkbox","Instructions":"","IsRequired":"0","ClassNames":"","DefaultVal":"0","Page":"1","SubFields":[{"DefaultVal":"0","ID":"Field108","Label":"Check One"},{"DefaultVal":"0","ID":"Field109","Label":"Check Two"},{"DefaultVal":"0","ID":"Field110","Label":"Check Three"}],"Type":"checkbox","ID":"Field108"},{"Title":"Multiple Choice","Instructions":"","IsRequired":"0","ClassNames":"","DefaultVal":"","Page":"1","Choices":[{"Label":"MC One"},{"Label":"MC Two"},{"Label":"MC Three"}],"Type":"radio","ID":"Field208","HasOtherField":false},{"Title":"Dropdown","Instructions":"","IsRequired":"0","ClassNames":"","DefaultVal":"","Page":"1","Choices":[{"Label":""},{"Label":"Dropdown One"},{"Label":"Dropdown Two"},{"Label":"Dropdown Three"}],"Type":"select","ID":"Field209","HasOtherField":false},{"Title":"Name","Instructions":"","IsRequired":"0","ClassNames":"","DefaultVal":"","Page":"1","SubFields":[{"DefaultVal":"","ID":"Field1","Label":"First"},{"DefaultVal":"","ID":"Field2","Label":"Last"}],"Type":"shortname","ID":"Field1"},{"Title":"File Upload","Instructions":"","IsRequired":"0","ClassNames":"","DefaultVal":"","Page":"1","Type":"file","ID":"Field210"},{"Title":"Address","Instructions":"","IsRequired":"0","ClassNames":"","DefaultVal":"","Page":"1","SubFields":[{"DefaultVal":"","ID":"Field211","Label":"Street Address"},{"DefaultVal":"","ID":"Field212","Label":"Address Line 2"},{"DefaultVal":"","ID":"Field213","Label":"City"},{"DefaultVal":"","ID":"Field214","Label":"State \/ Province \/ Region"},{"DefaultVal":"","ID":"Field215","Label":"Postal \/ Zip Code"},{"DefaultVal":"","ID":"Field216","Label":"Country"}],"Type":"address","ID":"Field211"},{"Title":"Date","Instructions":"","IsRequired":"0","ClassNames":"","DefaultVal":"","Page":"1","Type":"date","ID":"Field217"},{"Title":"Email","Instructions":"","IsRequired":"0","ClassNames":"","DefaultVal":"","Page":"1","Type":"email","ID":"Field218"},{"Title":"Time","Instructions":"","IsRequired":"0","ClassNames":"","DefaultVal":"","Page":"1","Type":"time","ID":"Field219"},{"Title":"Phone Number","Instructions":"","IsRequired":"0","ClassNames":"","DefaultVal":"","Page":"1","Type":"phone","ID":"Field220"},{"Title":"Website","Instructions":"","IsRequired":"0","ClassNames":"","DefaultVal":"","Page":"1","Type":"url","ID":"Field221"},{"Title":"Amount","Instructions":"","IsRequired":"0","ClassNames":"","DefaultVal":"","Page":"1","Type":"money","ID":"Field222"},{"Title":"Likert: Evaluate the following statements.","Instructions":"","IsRequired":"0","ClassNames":"","DefaultVal":"0","Page":"1","SubFields":[{"DefaultVal":"0","ID":"Field4","Label":"Wufoo is Fun"},{"DefaultVal":"0","ID":"Field5","Label":"Wufoo Is Pretty"},{"DefaultVal":"0","ID":"Field6","Label":"Wufoo is Your Friend"}],"Choices":[{"Score":1,"Label":"Strongly Disagree"},{"Score":2,"Label":"Disagree"},{"Score":3,"Label":"Agree"},{"Score":4,"Label":"Strongly Agree"}],"Type":"likert","ID":"Field4","HasOtherField":false},{"Title":"Rating","Instructions":"","IsRequired":"0","ClassNames":"","DefaultVal":"","Page":"1","Type":"rating","ID":"Field223"},{"Title":"Date Created","Type":"date","ID":"DateCreated"},{"Title":"Created By","Type":"text","ID":"CreatedBy"},{"Title":"Last Updated","Type":"date","ID":"LastUpdated"},{"Title":"Updated By","Type":"text","ID":"UpdatedBy"},{"Title":"IP Address","IsSystem":true,"Type":"text","ID":"IP"},{"Title":"Last Page Accessed","IsSystem":true,"Type":"text","ID":"LastPage"},{"Title":"Completion Status","IsSystem":true,"Type":"text","ID":"CompleteSubmission"}]}'
+-
+    request:
+        method: GET
+        url: 'https://fishbowl.wufoo.com/api/v3/forms/wufoo-api-example/entries.json'
+        headers:
+            Host: fishbowl.wufoo.com
+            Accept-Encoding: null
+            User-Agent: 'GuzzleHttp/6.2.1 curl/7.51.0 PHP/7.1.5'
+            Authorization: 'Basic QU9JNi1MRktMLVZNMVEtSUVYOTpQaHBXdWZvbw=='
+            Accept: null
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Date: 'Mon, 10 Jul 2017 19:18:48 GMT'
+            Set-Cookie: 'PHPSESSID=mb7gjpovbr67p1anlueomdqvc5; path=/; domain=.wufoo.com, ep201=b1Wh2RCGBSfF1ZSUuHFGVNRM8Tg=;Path=/;Domain=.wufoo.com;Expires=Mon, 10-Jul-2017 19:48:48 GMT, ep202=Iro+Ta27lShY5nRsCA1iPaJHg1Q=;Path=/;Domain=.wufoo.com;Expires=Wed, 11-Jul-2018 01:07:34 GMT'
+            Expires: '0'
+            Cache-Control: 'must-revalidate, post-check=0, pre-check=0, private'
+            Pragma: public
+            X-Frame-Options: SAMEORIGIN
+            X-UA-Compatible: 'IE=Edge,chrome=1'
+            Transfer-Encoding: chunked
+            Content-Type: 'application/json; charset=utf-8'
+            X-Powered-By: 'Bananas and Rum'
+            Vary: Accept-Encoding
+        body: '{"Entries":[{"EntryId":"1","Field105":"","Field106":"","Field107":"","Field108":"","Field109":"","Field110":"","Field208":"","Field209":"","Field1":"Tim","Field2":"Sabat","Field210":"","Field211":"","Field212":"","Field213":"","Field214":"","Field215":"","Field216":"","Field217":"","Field218":"","Field219":"","Field220":"","Field221":"","Field222":null,"Field4":"Strongly Agree","Field5":"Strongly Agree","Field6":"Agree","Field223":"","DateCreated":"2008-11-25 01:45:28","CreatedBy":"public","DateUpdated":"","UpdatedBy":null},{"EntryId":"2","Field105":"","Field106":"","Field107":"","Field108":"","Field109":"","Field110":"","Field208":"","Field209":"","Field1":"Amber","Field2":"Des","Field210":"","Field211":"","Field212":"","Field213":"","Field214":"","Field215":"","Field216":"","Field217":"","Field218":"","Field219":"","Field220":"","Field221":"","Field222":null,"Field4":"Agree","Field5":"Agree","Field6":"Disagree","Field223":"","DateCreated":"2008-11-25 01:46:04","CreatedBy":"public","DateUpdated":"","UpdatedBy":null},{"EntryId":"3","Field105":"","Field106":"","Field107":"","Field108":"","Field109":"","Field110":"","Field208":"","Field209":"","Field1":"Camden","Field2":"Sabat","Field210":"","Field211":"","Field212":"","Field213":"","Field214":"","Field215":"","Field216":"","Field217":"","Field218":"","Field219":"","Field220":"","Field221":"","Field222":null,"Field4":"Strongly Agree","Field5":"Strongly Agree","Field6":"Strongly Agree","Field223":"","DateCreated":"2008-11-25 01:46:42","CreatedBy":"public","DateUpdated":"","UpdatedBy":null},{"EntryId":"4","Field105":"","Field106":"","Field107":"","Field108":"","Field109":"","Field110":"","Field208":"","Field209":"","Field1":"chad","Field2":"Gibbs","Field210":"","Field211":"","Field212":"","Field213":"","Field214":"","Field215":"","Field216":"","Field217":"","Field218":"","Field219":"","Field220":"","Field221":"","Field222":null,"Field4":"Agree","Field5":"Agree","Field6":"Strongly Agree","Field223":"","DateCreated":"2009-08-14 03:43:22","CreatedBy":"public","DateUpdated":"","UpdatedBy":null},{"EntryId":"5","Field105":"","Field106":"","Field107":"","Field108":"","Field109":"","Field110":"","Field208":"","Field209":"","Field1":"test","Field2":"Last","Field210":"","Field211":"","Field212":"","Field213":"","Field214":"","Field215":"","Field216":"","Field217":"","Field218":"","Field219":"","Field220":"","Field221":"","Field222":null,"Field4":"Strongly Disagree","Field5":"Disagree","Field6":"Strongly Agree","Field223":"","DateCreated":"2009-09-30 00:51:33","CreatedBy":"public","DateUpdated":"","UpdatedBy":null},{"EntryId":"6","Field105":"","Field106":"","Field107":"","Field108":"","Field109":"","Field110":"","Field208":"","Field209":"","Field1":"test2","Field2":"abc","Field210":"","Field211":"","Field212":"","Field213":"","Field214":"","Field215":"","Field216":"","Field217":"","Field218":"","Field219":"","Field220":"","Field221":"","Field222":null,"Field4":"Disagree","Field5":"Strongly Disagree","Field6":"Strongly Agree","Field223":"","DateCreated":"2009-09-30 00:52:35","CreatedBy":"public","DateUpdated":"","UpdatedBy":null},{"EntryId":"7","Field105":"","Field106":"","Field107":"","Field108":"","Field109":"","Field110":"","Field208":"","Field209":"","Field1":"asCduOwcidJZhUYYU","Field2":"sVengXWjlRiTdMQdhPV","Field210":"","Field211":"","Field212":"","Field213":"","Field214":"","Field215":"","Field216":"","Field217":"","Field218":"","Field219":"","Field220":"","Field221":"","Field222":null,"Field4":"Strongly Disagree","Field5":"Disagree","Field6":"Disagree","Field223":"","DateCreated":"2010-04-03 10:25:58","CreatedBy":"public","DateUpdated":"","UpdatedBy":null},{"EntryId":"8","Field105":"","Field106":"","Field107":"","Field108":"","Field109":"","Field110":"","Field208":"","Field209":"","Field1":"","Field2":"","Field210":"","Field211":"","Field212":"","Field213":"","Field214":"","Field215":"","Field216":"","Field217":"","Field218":"","Field219":"","Field220":"","Field221":"","Field222":null,"Field4":"Disagree","Field5":"Disagree","Field6":"Disagree","Field223":"","DateCreated":"2015-03-19 09:09:02","CreatedBy":"public","DateUpdated":"","UpdatedBy":null},{"EntryId":"9","Field105":"Some Text","Field106":"123","Field107":"Here is a Paragraph field. It can hold more text than a regular Single Line Text field. \r\nThis is a second line of text in the same field.","Field108":"Check One","Field109":"Check Two","Field110":"Check Three","Field208":"MC Two","Field209":"Dropdown Three","Field1":"Wufoo","Field2":"Test","Field210":"test.txt (https:\/\/fishbowl.wufoo.com\/cabinet\/czFhZmVhOGIxdmswamY3\/gTVeAerMQyk%3D\/test.txt)","Field211":"123 Street","Field212":"","Field213":"City","Field214":"CA","Field215":"12445","Field216":"United States","Field217":"2015-04-20","Field218":"test@wufoo.com","Field219":"00:34:56","Field220":"1231231234","Field221":"http:\/\/www.wufoo.com","Field222":"100.99","Field4":"Strongly Agree","Field5":"Agree","Field6":"Strongly Agree","Field223":"5","DateCreated":"2015-04-21 07:50:34","CreatedBy":"public","DateUpdated":"","UpdatedBy":null},{"EntryId":"10","Field105":"API-Test","Field106":"42","Field107":"","Field108":"","Field109":"","Field110":"","Field208":"","Field209":"","Field1":"Wufoo","Field2":"Test","Field210":"","Field211":"","Field212":"","Field213":"","Field214":"","Field215":"","Field216":"","Field217":"","Field218":"","Field219":"","Field220":"","Field221":"","Field222":null,"Field4":"","Field5":"","Field6":"","Field223":"","DateCreated":"2015-04-22 07:09:16","CreatedBy":"public","DateUpdated":"","UpdatedBy":null},{"EntryId":"11","Field105":"API-Test","Field106":"42","Field107":"","Field108":"","Field109":"","Field110":"","Field208":"","Field209":"","Field1":"Wufoo","Field2":"Test","Field210":"","Field211":"","Field212":"","Field213":"","Field214":"","Field215":"","Field216":"","Field217":"","Field218":"","Field219":"","Field220":"","Field221":"","Field222":null,"Field4":"","Field5":"","Field6":"","Field223":"","DateCreated":"2015-06-02 05:39:26","CreatedBy":"public","DateUpdated":"","UpdatedBy":null},{"EntryId":"12","Field105":"API-Test","Field106":"42","Field107":"","Field108":"","Field109":"","Field110":"","Field208":"","Field209":"","Field1":"Wufoo","Field2":"Test","Field210":"","Field211":"","Field212":"","Field213":"","Field214":"","Field215":"","Field216":"","Field217":"","Field218":"","Field219":"","Field220":"","Field221":"","Field222":null,"Field4":"","Field5":"","Field6":"","Field223":"","DateCreated":"2015-06-02 05:40:09","CreatedBy":"public","DateUpdated":"","UpdatedBy":null},{"EntryId":"13","Field105":"API-Test","Field106":"42","Field107":"","Field108":"","Field109":"","Field110":"","Field208":"","Field209":"","Field1":"Wufoo","Field2":"Test","Field210":"","Field211":"","Field212":"","Field213":"","Field214":"","Field215":"","Field216":"","Field217":"","Field218":"","Field219":"","Field220":"","Field221":"","Field222":null,"Field4":"","Field5":"","Field6":"","Field223":"","DateCreated":"2015-06-02 05:40:48","CreatedBy":"public","DateUpdated":"","UpdatedBy":null},{"EntryId":"14","Field105":"API-Test","Field106":"42","Field107":"","Field108":"","Field109":"","Field110":"","Field208":"","Field209":"","Field1":"Wufoo","Field2":"Test","Field210":"","Field211":"","Field212":"","Field213":"","Field214":"","Field215":"","Field216":"","Field217":"","Field218":"","Field219":"","Field220":"","Field221":"","Field222":null,"Field4":"","Field5":"","Field6":"","Field223":"","DateCreated":"2015-06-02 05:40:50","CreatedBy":"public","DateUpdated":"","UpdatedBy":null},{"EntryId":"15","Field105":"API-Test","Field106":"42","Field107":"","Field108":"","Field109":"","Field110":"","Field208":"","Field209":"","Field1":"Wufoo","Field2":"Test","Field210":"","Field211":"","Field212":"","Field213":"","Field214":"","Field215":"","Field216":"","Field217":"","Field218":"","Field219":"","Field220":"","Field221":"","Field222":null,"Field4":"","Field5":"","Field6":"","Field223":"","DateCreated":"2015-06-02 05:41:10","CreatedBy":"public","DateUpdated":"","UpdatedBy":null},{"EntryId":"16","Field105":"API-Test","Field106":"42","Field107":"","Field108":"","Field109":"","Field110":"","Field208":"","Field209":"","Field1":"Wufoo","Field2":"Test","Field210":"","Field211":"","Field212":"","Field213":"","Field214":"","Field215":"","Field216":"","Field217":"","Field218":"","Field219":"","Field220":"","Field221":"","Field222":null,"Field4":"","Field5":"","Field6":"","Field223":"","DateCreated":"2015-06-02 05:41:13","CreatedBy":"public","DateUpdated":"","UpdatedBy":null},{"EntryId":"17","Field105":"API-Test","Field106":"42","Field107":"","Field108":"","Field109":"","Field110":"","Field208":"","Field209":"","Field1":"Wufoo","Field2":"Test","Field210":"","Field211":"","Field212":"","Field213":"","Field214":"","Field215":"","Field216":"","Field217":"","Field218":"","Field219":"","Field220":"","Field221":"","Field222":null,"Field4":"","Field5":"","Field6":"","Field223":"","DateCreated":"2015-06-02 05:59:12","CreatedBy":"public","DateUpdated":"","UpdatedBy":null},{"EntryId":"18","Field105":"API-Test","Field106":"42","Field107":"","Field108":"","Field109":"","Field110":"","Field208":"","Field209":"","Field1":"Wufoo","Field2":"Test","Field210":"","Field211":"","Field212":"","Field213":"","Field214":"","Field215":"","Field216":"","Field217":"","Field218":"","Field219":"","Field220":"","Field221":"","Field222":null,"Field4":"","Field5":"","Field6":"","Field223":"","DateCreated":"2015-06-02 05:59:57","CreatedBy":"public","DateUpdated":"","UpdatedBy":null},{"EntryId":"19","Field105":"API-Test","Field106":"42","Field107":"","Field108":"","Field109":"","Field110":"","Field208":"","Field209":"","Field1":"Wufoo","Field2":"Test","Field210":"","Field211":"","Field212":"","Field213":"","Field214":"","Field215":"","Field216":"","Field217":"","Field218":"","Field219":"","Field220":"","Field221":"","Field222":null,"Field4":"","Field5":"","Field6":"","Field223":"","DateCreated":"2015-06-03 06:37:34","CreatedBy":"public","DateUpdated":"","UpdatedBy":null},{"EntryId":"20","Field105":"API-Test","Field106":"42","Field107":"","Field108":"","Field109":"","Field110":"","Field208":"","Field209":"","Field1":"Wufoo","Field2":"Test","Field210":"","Field211":"","Field212":"","Field213":"","Field214":"","Field215":"","Field216":"","Field217":"","Field218":"","Field219":"","Field220":"","Field221":"","Field222":null,"Field4":"","Field5":"","Field6":"","Field223":"","DateCreated":"2015-06-04 02:23:14","CreatedBy":"public","DateUpdated":"","UpdatedBy":null},{"EntryId":"21","Field105":"API-Tes","Field106":"42","Field107":"","Field108":"","Field109":"","Field110":"","Field208":"","Field209":"","Field1":"Wufoo","Field2":"Test","Field210":"","Field211":"","Field212":"","Field213":"","Field214":"","Field215":"","Field216":"","Field217":"","Field218":"","Field219":"","Field220":"","Field221":"","Field222":null,"Field4":"","Field5":"","Field6":"","Field223":"","DateCreated":"2015-06-04 08:09:35","CreatedBy":"public","DateUpdated":"","UpdatedBy":null},{"EntryId":"22","Field105":"API-Test","Field106":"42","Field107":"","Field108":"","Field109":"","Field110":"","Field208":"","Field209":"","Field1":"Wufoo","Field2":"Test","Field210":"","Field211":"","Field212":"","Field213":"","Field214":"","Field215":"","Field216":"","Field217":"","Field218":"","Field219":"","Field220":"","Field221":"","Field222":null,"Field4":"","Field5":"","Field6":"","Field223":"","DateCreated":"2015-06-04 08:10:36","CreatedBy":"public","DateUpdated":"","UpdatedBy":null},{"EntryId":"23","Field105":"API-Test","Field106":"42","Field107":"","Field108":"","Field109":"","Field110":"","Field208":"","Field209":"","Field1":"Wufoo","Field2":"Test","Field210":"","Field211":"","Field212":"","Field213":"","Field214":"","Field215":"","Field216":"","Field217":"","Field218":"","Field219":"","Field220":"","Field221":"","Field222":null,"Field4":"","Field5":"","Field6":"","Field223":"","DateCreated":"2015-06-04 08:11:34","CreatedBy":"public","DateUpdated":"","UpdatedBy":null},{"EntryId":"24","Field105":"API-Test","Field106":"42","Field107":"","Field108":"","Field109":"","Field110":"","Field208":"","Field209":"","Field1":"Wufoo","Field2":"Test","Field210":"","Field211":"","Field212":"","Field213":"","Field214":"","Field215":"","Field216":"","Field217":"","Field218":"","Field219":"","Field220":"","Field221":"","Field222":null,"Field4":"","Field5":"","Field6":"","Field223":"","DateCreated":"2015-06-04 08:13:53","CreatedBy":"public","DateUpdated":"","UpdatedBy":null},{"EntryId":"25","Field105":"sdfsdf","Field106":"","Field107":"","Field108":"","Field109":"","Field110":"","Field208":"MC One","Field209":"","Field1":"","Field2":"","Field210":"","Field211":"","Field212":"","Field213":"","Field214":"","Field215":"","Field216":"","Field217":"","Field218":"","Field219":"","Field220":"","Field221":"","Field222":null,"Field4":"","Field5":"","Field6":"","Field223":"","DateCreated":"2015-06-09 06:43:22","CreatedBy":"public","DateUpdated":"","UpdatedBy":null}]}'
+-
+    request:
+        method: GET
+        url: 'https://fishbowl.wufoo.com/api/v3/forms/wufoo-api-example/entries.json?pageSize=5'
+        headers:
+            Host: fishbowl.wufoo.com
+            Accept-Encoding: null
+            User-Agent: 'GuzzleHttp/6.2.1 curl/7.51.0 PHP/7.1.5'
+            Authorization: 'Basic QU9JNi1MRktMLVZNMVEtSUVYOTpQaHBXdWZvbw=='
+            Accept: null
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Date: 'Mon, 10 Jul 2017 19:18:49 GMT'
+            Set-Cookie: 'PHPSESSID=gu7430l31hvaurfocriqtjfrj6; path=/; domain=.wufoo.com, ep201=qfPiowsGkWmKWszU0ThDRoKZ6h4=;Path=/;Domain=.wufoo.com;Expires=Mon, 10-Jul-2017 19:48:49 GMT, ep202=nss9m5XNDpa0fqTJazf93GjYv/E=;Path=/;Domain=.wufoo.com;Expires=Wed, 11-Jul-2018 01:07:35 GMT'
+            Expires: '0'
+            Cache-Control: 'must-revalidate, post-check=0, pre-check=0, private'
+            Pragma: public
+            X-Frame-Options: SAMEORIGIN
+            X-UA-Compatible: 'IE=Edge,chrome=1'
+            Content-Length: '2598'
+            Content-Type: 'application/json; charset=utf-8'
+            X-Powered-By: 'Bananas and Rum'
+            Vary: Accept-Encoding
+        body: '{"Entries":[{"EntryId":"1","Field105":"","Field106":"","Field107":"","Field108":"","Field109":"","Field110":"","Field208":"","Field209":"","Field1":"Tim","Field2":"Sabat","Field210":"","Field211":"","Field212":"","Field213":"","Field214":"","Field215":"","Field216":"","Field217":"","Field218":"","Field219":"","Field220":"","Field221":"","Field222":null,"Field4":"Strongly Agree","Field5":"Strongly Agree","Field6":"Agree","Field223":"","DateCreated":"2008-11-25 01:45:28","CreatedBy":"public","DateUpdated":"","UpdatedBy":null},{"EntryId":"2","Field105":"","Field106":"","Field107":"","Field108":"","Field109":"","Field110":"","Field208":"","Field209":"","Field1":"Amber","Field2":"Des","Field210":"","Field211":"","Field212":"","Field213":"","Field214":"","Field215":"","Field216":"","Field217":"","Field218":"","Field219":"","Field220":"","Field221":"","Field222":null,"Field4":"Agree","Field5":"Agree","Field6":"Disagree","Field223":"","DateCreated":"2008-11-25 01:46:04","CreatedBy":"public","DateUpdated":"","UpdatedBy":null},{"EntryId":"3","Field105":"","Field106":"","Field107":"","Field108":"","Field109":"","Field110":"","Field208":"","Field209":"","Field1":"Camden","Field2":"Sabat","Field210":"","Field211":"","Field212":"","Field213":"","Field214":"","Field215":"","Field216":"","Field217":"","Field218":"","Field219":"","Field220":"","Field221":"","Field222":null,"Field4":"Strongly Agree","Field5":"Strongly Agree","Field6":"Strongly Agree","Field223":"","DateCreated":"2008-11-25 01:46:42","CreatedBy":"public","DateUpdated":"","UpdatedBy":null},{"EntryId":"4","Field105":"","Field106":"","Field107":"","Field108":"","Field109":"","Field110":"","Field208":"","Field209":"","Field1":"chad","Field2":"Gibbs","Field210":"","Field211":"","Field212":"","Field213":"","Field214":"","Field215":"","Field216":"","Field217":"","Field218":"","Field219":"","Field220":"","Field221":"","Field222":null,"Field4":"Agree","Field5":"Agree","Field6":"Strongly Agree","Field223":"","DateCreated":"2009-08-14 03:43:22","CreatedBy":"public","DateUpdated":"","UpdatedBy":null},{"EntryId":"5","Field105":"","Field106":"","Field107":"","Field108":"","Field109":"","Field110":"","Field208":"","Field209":"","Field1":"test","Field2":"Last","Field210":"","Field211":"","Field212":"","Field213":"","Field214":"","Field215":"","Field216":"","Field217":"","Field218":"","Field219":"","Field220":"","Field221":"","Field222":null,"Field4":"Strongly Disagree","Field5":"Disagree","Field6":"Strongly Agree","Field223":"","DateCreated":"2009-09-30 00:51:33","CreatedBy":"public","DateUpdated":"","UpdatedBy":null}]}'
+-
+    request:
+        method: GET
+        url: 'https://fishbowl.wufoo.com/api/v3/forms/wufoo-api-example/entries.json?sort=EntryId&sortDirection=DESC&pageSize=10'
+        headers:
+            Host: fishbowl.wufoo.com
+            Accept-Encoding: null
+            User-Agent: 'GuzzleHttp/6.2.1 curl/7.51.0 PHP/7.1.5'
+            Authorization: 'Basic QU9JNi1MRktMLVZNMVEtSUVYOTpQaHBXdWZvbw=='
+            Accept: null
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Date: 'Mon, 10 Jul 2017 19:18:49 GMT'
+            Set-Cookie: 'PHPSESSID=m8b788jc149demsnlijf2utsn1; path=/; domain=.wufoo.com, ep201=Pv5vdX702riE3ACQBR8axjYoM7I=;Path=/;Domain=.wufoo.com;Expires=Mon, 10-Jul-2017 19:48:49 GMT, ep202=XoltsJ+JFNHI7SUo5IZBu56gYpw=;Path=/;Domain=.wufoo.com;Expires=Wed, 11-Jul-2018 01:07:35 GMT'
+            Expires: '0'
+            Cache-Control: 'must-revalidate, post-check=0, pre-check=0, private'
+            Pragma: public
+            X-Frame-Options: SAMEORIGIN
+            X-UA-Compatible: 'IE=Edge,chrome=1'
+            Content-Length: '4960'
+            Content-Type: 'application/json; charset=utf-8'
+            X-Powered-By: 'Bananas and Rum'
+            Vary: Accept-Encoding
+        body: '{"Entries":[{"EntryId":"123","Field105":"dental floss","Field106":"","Field107":"","Field108":"","Field109":"","Field110":"","Field208":"","Field209":"","Field1":"","Field2":"","Field210":"","Field211":"","Field212":"","Field213":"","Field214":"","Field215":"","Field216":"","Field217":"","Field218":"","Field219":"","Field220":"","Field221":"","Field222":null,"Field4":"","Field5":"","Field6":"","Field223":"","DateCreated":"2017-07-07 03:47:21","CreatedBy":"public","DateUpdated":"","UpdatedBy":null},{"EntryId":"122","Field105":"this is requried","Field106":"","Field107":"","Field108":"","Field109":"","Field110":"","Field208":"","Field209":"","Field1":"","Field2":"","Field210":"","Field211":"","Field212":"","Field213":"","Field214":"","Field215":"","Field216":"","Field217":"","Field218":"","Field219":"","Field220":"","Field221":"","Field222":null,"Field4":"","Field5":"","Field6":"","Field223":"","DateCreated":"2017-07-07 03:45:03","CreatedBy":"public","DateUpdated":"","UpdatedBy":null},{"EntryId":"121","Field105":"Single line of text","Field106":"","Field107":"","Field108":"","Field109":"","Field110":"","Field208":"","Field209":"","Field1":"","Field2":"","Field210":"","Field211":"","Field212":"","Field213":"","Field214":"","Field215":"","Field216":"","Field217":"","Field218":"","Field219":"","Field220":"","Field221":"","Field222":null,"Field4":"","Field5":"","Field6":"","Field223":"","DateCreated":"2017-07-07 03:41:53","CreatedBy":"public","DateUpdated":"","UpdatedBy":null},{"EntryId":"120","Field105":"Single line of text","Field106":"","Field107":"","Field108":"","Field109":"","Field110":"","Field208":"","Field209":"","Field1":"","Field2":"","Field210":"","Field211":"","Field212":"","Field213":"","Field214":"","Field215":"","Field216":"","Field217":"","Field218":"","Field219":"","Field220":"","Field221":"","Field222":null,"Field4":"","Field5":"","Field6":"","Field223":"","DateCreated":"2017-07-07 03:41:52","CreatedBy":"public","DateUpdated":"","UpdatedBy":null},{"EntryId":"119","Field105":"test","Field106":"","Field107":"","Field108":"","Field109":"","Field110":"","Field208":"","Field209":"","Field1":"","Field2":"","Field210":"","Field211":"","Field212":"","Field213":"","Field214":"","Field215":"","Field216":"","Field217":"","Field218":"","Field219":"","Field220":"","Field221":"","Field222":null,"Field4":"","Field5":"","Field6":"","Field223":"","DateCreated":"2017-07-07 03:40:24","CreatedBy":"public","DateUpdated":"","UpdatedBy":null},{"EntryId":"118","Field105":"API-Test","Field106":"42","Field107":"","Field108":"","Field109":"","Field110":"","Field208":"","Field209":"","Field1":"Wufoo","Field2":"Test","Field210":"","Field211":"","Field212":"","Field213":"","Field214":"","Field215":"","Field216":"","Field217":"","Field218":"","Field219":"","Field220":"","Field221":"","Field222":null,"Field4":"","Field5":"","Field6":"","Field223":"","DateCreated":"2017-07-07 03:39:40","CreatedBy":"public","DateUpdated":"","UpdatedBy":null},{"EntryId":"117","Field105":"API-Test","Field106":"42","Field107":"","Field108":"","Field109":"","Field110":"","Field208":"","Field209":"","Field1":"","Field2":"","Field210":"","Field211":"","Field212":"","Field213":"","Field214":"asdfsaf","Field215":"","Field216":"","Field217":"","Field218":"","Field219":"","Field220":"","Field221":"","Field222":null,"Field4":"","Field5":"","Field6":"","Field223":"","DateCreated":"2017-07-01 06:11:47","CreatedBy":"public","DateUpdated":"","UpdatedBy":null},{"EntryId":"116","Field105":"API-Test","Field106":"42","Field107":"","Field108":"","Field109":"","Field110":"","Field208":"","Field209":"","Field1":"","Field2":"","Field210":"","Field211":"","Field212":"","Field213":"","Field214":"asdfsaf","Field215":"","Field216":"","Field217":"","Field218":"","Field219":"","Field220":"","Field221":"","Field222":null,"Field4":"","Field5":"","Field6":"","Field223":"","DateCreated":"2017-07-01 06:11:46","CreatedBy":"public","DateUpdated":"","UpdatedBy":null},{"EntryId":"115","Field105":"API-Test","Field106":"42","Field107":"","Field108":"","Field109":"","Field110":"","Field208":"","Field209":"","Field1":"","Field2":"","Field210":"","Field211":"","Field212":"","Field213":"","Field214":"asdfsaf","Field215":"","Field216":"","Field217":"","Field218":"","Field219":"","Field220":"","Field221":"","Field222":null,"Field4":"","Field5":"","Field6":"","Field223":"","DateCreated":"2017-07-01 06:11:45","CreatedBy":"public","DateUpdated":"","UpdatedBy":null},{"EntryId":"114","Field105":"API-Test","Field106":"42","Field107":"","Field108":"","Field109":"","Field110":"","Field208":"","Field209":"","Field1":"","Field2":"","Field210":"","Field211":"","Field212":"","Field213":"","Field214":"asdfsaf","Field215":"","Field216":"","Field217":"","Field218":"","Field219":"","Field220":"","Field221":"","Field222":null,"Field4":"","Field5":"","Field6":"","Field223":"","DateCreated":"2017-07-01 06:11:45","CreatedBy":"public","DateUpdated":"","UpdatedBy":null}]}'
+-
+    request:
+        method: GET
+        url: 'https://fishbowl.wufoo.com/api/v3/forms/wufoo-api-example/entries/count.json'
+        headers:
+            Host: fishbowl.wufoo.com
+            Accept-Encoding: null
+            User-Agent: 'GuzzleHttp/6.2.1 curl/7.51.0 PHP/7.1.5'
+            Authorization: 'Basic QU9JNi1MRktMLVZNMVEtSUVYOTpQaHBXdWZvbw=='
+            Accept: null
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Date: 'Mon, 10 Jul 2017 19:18:49 GMT'
+            Set-Cookie: 'PHPSESSID=o6ruqahi1pb7229edc33kbq0t5; path=/; domain=.wufoo.com, ep201=r6jfn4IbF36t9sJunB+MbpQFLM0=;Path=/;Domain=.wufoo.com;Expires=Mon, 10-Jul-2017 19:48:49 GMT, ep202=swLQEylbJr4JRYKgqLYlqd7v8mo=;Path=/;Domain=.wufoo.com;Expires=Wed, 11-Jul-2018 01:07:35 GMT'
+            Expires: '0'
+            Cache-Control: 'must-revalidate, post-check=0, pre-check=0, private'
+            Pragma: public
+            X-Frame-Options: SAMEORIGIN
+            X-UA-Compatible: 'IE=Edge,chrome=1'
+            Content-Length: '20'
+            Content-Type: 'application/json; charset=utf-8'
+            X-Powered-By: 'Winter is Coming'
+        body: '{"EntryCount":"123"}'
+-
+    request:
+        method: GET
+        url: 'https://fishbowl.wufoo.com/api/v3/forms/wufoo-api-example/comments.json'
+        headers:
+            Host: fishbowl.wufoo.com
+            Accept-Encoding: null
+            User-Agent: 'GuzzleHttp/6.2.1 curl/7.51.0 PHP/7.1.5'
+            Authorization: 'Basic QU9JNi1MRktMLVZNMVEtSUVYOTpQaHBXdWZvbw=='
+            Accept: null
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Date: 'Mon, 10 Jul 2017 19:18:50 GMT'
+            Set-Cookie: 'PHPSESSID=b28il0iqltqbcsj7f6aud6cqk2; path=/; domain=.wufoo.com, ep201=x9cifE/X5IZ9sLiS2rcYJXbylzI=;Path=/;Domain=.wufoo.com;Expires=Mon, 10-Jul-2017 19:48:50 GMT, ep202=wy9DVfiIvkF4wGmgcKMrhZJGIco=;Path=/;Domain=.wufoo.com;Expires=Wed, 11-Jul-2018 01:07:36 GMT'
+            Expires: '0'
+            Cache-Control: 'must-revalidate, post-check=0, pre-check=0, private'
+            Pragma: public
+            X-Frame-Options: SAMEORIGIN
+            X-UA-Compatible: 'IE=Edge,chrome=1'
+            Content-Length: '372'
+            Content-Type: 'application/json; charset=utf-8'
+            X-Powered-By: 'Bananas and Rum'
+        body: '{"Comments":[{"CommentId":"4","EntryId":"6","Text":"Here''s another comment","CommentedBy":"fishbowl","DateCreated":"2015-04-20 15:37:56"},{"CommentId":"2","EntryId":"8","Text":"Test Comment","CommentedBy":"fishbowl","DateCreated":"2015-04-20 15:37:42"},{"CommentId":"3","EntryId":"8","Text":"Another Comment","CommentedBy":"fishbowl","DateCreated":"2015-04-20 15:37:47"}]}'
+-
+    request:
+        method: GET
+        url: 'https://fishbowl.wufoo.com/api/v3/forms/wufoo-api-example/comments/count.json'
+        headers:
+            Host: fishbowl.wufoo.com
+            Accept-Encoding: null
+            User-Agent: 'GuzzleHttp/6.2.1 curl/7.51.0 PHP/7.1.5'
+            Authorization: 'Basic QU9JNi1MRktMLVZNMVEtSUVYOTpQaHBXdWZvbw=='
+            Accept: null
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Date: 'Mon, 10 Jul 2017 19:18:50 GMT'
+            Set-Cookie: 'PHPSESSID=e25bmsub9k3qneqv38bqa15p73; path=/; domain=.wufoo.com, ep201=pRGK/V7jMYYRjc3CrrLzcG22Pek=;Path=/;Domain=.wufoo.com;Expires=Mon, 10-Jul-2017 19:48:50 GMT, ep202=e/54pO4+Cg6nF1bfZSfVMolF7ao=;Path=/;Domain=.wufoo.com;Expires=Wed, 11-Jul-2018 01:07:36 GMT'
+            Expires: '0'
+            Cache-Control: 'must-revalidate, post-check=0, pre-check=0, private'
+            Pragma: public
+            X-Frame-Options: SAMEORIGIN
+            X-UA-Compatible: 'IE=Edge,chrome=1'
+            Content-Length: '11'
+            Content-Type: 'application/json; charset=utf-8'
+            X-Powered-By: 'Bananas and Rum'
+        body: '{"Count":3}'
+-
+    request:
+        method: GET
+        url: 'https://fishbowl.wufoo.com/api/v3/forms/wufoo-api-example/comments.json?entryId=8'
+        headers:
+            Host: fishbowl.wufoo.com
+            Accept-Encoding: null
+            User-Agent: 'GuzzleHttp/6.2.1 curl/7.51.0 PHP/7.1.5'
+            Authorization: 'Basic QU9JNi1MRktMLVZNMVEtSUVYOTpQaHBXdWZvbw=='
+            Accept: null
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Date: 'Mon, 10 Jul 2017 19:18:50 GMT'
+            Set-Cookie: 'PHPSESSID=sgt6jlh666lfhkkj3k0omgisp3; path=/; domain=.wufoo.com, ep201=61ohec+KHu/T0jfexbjNrMVQOwA=;Path=/;Domain=.wufoo.com;Expires=Mon, 10-Jul-2017 19:48:50 GMT, ep202=Gm3B5YOxfAZ+nL33mkmksBF3nJM=;Path=/;Domain=.wufoo.com;Expires=Wed, 11-Jul-2018 01:07:36 GMT'
+            Expires: '0'
+            Cache-Control: 'must-revalidate, post-check=0, pre-check=0, private'
+            Pragma: public
+            X-Frame-Options: SAMEORIGIN
+            X-UA-Compatible: 'IE=Edge,chrome=1'
+            Content-Length: '247'
+            Content-Type: 'application/json; charset=utf-8'
+            X-Powered-By: 'Bananas and Rum'
+        body: '{"Comments":[{"CommentId":"2","EntryId":"8","Text":"Test Comment","CommentedBy":"fishbowl","DateCreated":"2015-04-20 15:37:42"},{"CommentId":"3","EntryId":"8","Text":"Another Comment","CommentedBy":"fishbowl","DateCreated":"2015-04-20 15:37:47"}]}'
+-
+    request:
+        method: GET
+        url: 'https://fishbowl.wufoo.com/api/v3/forms/wufoo-api-example/comments.json?entryId=8&pageStart=0&pageSize=1'
+        headers:
+            Host: fishbowl.wufoo.com
+            Accept-Encoding: null
+            User-Agent: 'GuzzleHttp/6.2.1 curl/7.51.0 PHP/7.1.5'
+            Authorization: 'Basic QU9JNi1MRktMLVZNMVEtSUVYOTpQaHBXdWZvbw=='
+            Accept: null
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Date: 'Mon, 10 Jul 2017 19:18:51 GMT'
+            Set-Cookie: 'PHPSESSID=292po662ikmvmal9j5hk2uilg6; path=/; domain=.wufoo.com, ep201=23QP8/FtN7smrv90JbiX+I1FgkU=;Path=/;Domain=.wufoo.com;Expires=Mon, 10-Jul-2017 19:48:51 GMT, ep202=8MS5/7vh1faecXMtBBMZfEZ1I30=;Path=/;Domain=.wufoo.com;Expires=Wed, 11-Jul-2018 01:07:37 GMT'
+            Expires: '0'
+            Cache-Control: 'must-revalidate, post-check=0, pre-check=0, private'
+            Pragma: public
+            X-Frame-Options: SAMEORIGIN
+            X-UA-Compatible: 'IE=Edge,chrome=1'
+            Content-Length: '129'
+            Content-Type: 'application/json; charset=utf-8'
+            X-Powered-By: Zathras
+        body: '{"Comments":[{"CommentId":"2","EntryId":"8","Text":"Test Comment","CommentedBy":"fishbowl","DateCreated":"2015-04-20 15:37:42"}]}'
+-
+    request:
+        method: GET
+        url: 'https://fishbowl.wufoo.com/api/v3/forms/wufoo-api-example/comments.json?entryId=8&pageStart=1'
+        headers:
+            Host: fishbowl.wufoo.com
+            Accept-Encoding: null
+            User-Agent: 'GuzzleHttp/6.2.1 curl/7.51.0 PHP/7.1.5'
+            Authorization: 'Basic QU9JNi1MRktMLVZNMVEtSUVYOTpQaHBXdWZvbw=='
+            Accept: null
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Date: 'Mon, 10 Jul 2017 19:18:51 GMT'
+            Set-Cookie: 'PHPSESSID=etnoqvodpqo60lre8gclilbks6; path=/; domain=.wufoo.com, ep201=5KW5A5fUVutnFSwrSI37PT70OOo=;Path=/;Domain=.wufoo.com;Expires=Mon, 10-Jul-2017 19:48:51 GMT, ep202=1PdPlvd9E9lq6cYx9MmcbEAbU4A=;Path=/;Domain=.wufoo.com;Expires=Wed, 11-Jul-2018 01:07:37 GMT'
+            Expires: '0'
+            Cache-Control: 'must-revalidate, post-check=0, pre-check=0, private'
+            Pragma: public
+            X-Frame-Options: SAMEORIGIN
+            X-UA-Compatible: 'IE=Edge,chrome=1'
+            Content-Length: '132'
+            Content-Type: 'application/json; charset=utf-8'
+            X-Powered-By: 'Bananas and Rum'
+        body: '{"Comments":[{"CommentId":"3","EntryId":"8","Text":"Another Comment","CommentedBy":"fishbowl","DateCreated":"2015-04-20 15:37:47"}]}'

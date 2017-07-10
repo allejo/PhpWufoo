@@ -4,10 +4,25 @@ namespace allejo\Wufoo\Tests;
 
 use allejo\Wufoo\EntryQuery;
 use allejo\Wufoo\WufooForm;
+use VCR\VCR;
 
 class WufooFormTest extends \PHPUnit_Framework_TestCase
 {
     const FORM_EXAMPLE = 'wufoo-api-example';
+
+    public function setUp()
+    {
+        if (getenv('PHP_VERSION') != 'hhvm')
+        {
+            VCR::turnOn();
+            VCR::insertCassette('wufoo');
+        }
+    }
+
+    public function tearDown()
+    {
+        VCR::turnOff();
+    }
 
     public function testWufooGetAllForms()
     {
