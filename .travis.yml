@@ -11,8 +11,8 @@ matrix:
   allow_failures:
     - php: hhvm # https://github.com/php-vcr/php-vcr/issues/90
 
-dist: trusty
-sudo: true
+dist: precise
+sudo: false
 
 cache:
   directories:
