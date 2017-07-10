@@ -15,7 +15,10 @@ if (!file_exists(__DIR__ . "/../vendor/autoload.php"))
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-VCR::turnOn();
-VCR::turnOff();
+if (getenv('PHP_VERSION') != 'hhvm')
+{
+    VCR::turnOn();
+    VCR::turnOff();
+}
 
 WufooForm::configureApi('fishbowl', 'AOI6-LFKL-VM1Q-IEX9');
